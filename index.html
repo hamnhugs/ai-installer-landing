@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;family=Work+Sans:wght@700;800;900&amp;display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@retellai/web-sdk@latest/dist/index.umd.js"></script>
     <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
@@ -143,14 +144,16 @@
                     </p>
                 </div>
                 <div class="flex flex-col sm:flex-row gap-6">
-                    <button class="bg-secondary text-white px-8 py-5 text-xl font-black uppercase tracking-tight bold-border technical-shadow hover:translate-x-1 hover:-translate-y-1 transition-transform">
-                        START 14-DAY FREE TRIAL
-                    </button>
-                    <a href="pricing.html" class="bg-white text-primary px-8 py-5 text-xl font-black uppercase tracking-tight border-4 border-primary hover:bg-primary/5 transition-all flex items-center justify-center gap-2">
-                        <span class="material-symbols-outlined">description</span>
-                        VIEW PRICING
+                    <a href="#live-demo" class="bg-secondary text-white px-8 py-5 text-xl font-black uppercase tracking-tight bold-border technical-shadow hover:translate-x-1 hover:-translate-y-1 transition-transform flex items-center gap-3">
+                        <span class="material-symbols-outlined">mic</span>
+                        TALK TO THE AI — LIVE
+                    </a>
+                    <a href="form.html" class="bg-white text-primary px-8 py-5 text-xl font-black uppercase tracking-tight border-4 border-primary hover:bg-primary/5 transition-all flex items-center justify-center gap-2">
+                        <span class="material-symbols-outlined">rocket_launch</span>
+                        START FREE TRIAL
                     </a>
                 </div>
+                <p class="text-xs font-bold text-primary/50 uppercase tracking-widest mt-4">↓ NO PHONE NEEDED — DEMO RUNS IN YOUR BROWSER</p>
             </div>
             <div class="lg:col-span-5">
                 <div class="relative p-2 bg-white bold-border technical-shadow">
@@ -302,96 +305,302 @@
         </div>
     </section>
 
-    <!-- Live Demonstration: HUD Style -->
-    <section class="max-w-7xl mx-auto px-6 py-24">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-            <div class="lg:col-span-5 space-y-6">
-                <div class="stamp-badge text-secondary border-secondary text-sm mb-4">OFFICIAL DEMO</div>
-                <h2 class="font-headline text-5xl font-black text-primary leading-[0.9] uppercase">EXPERIENCE THE PRECISION</h2>
-                <p class="text-lg font-bold leading-relaxed text-on-surface-variant">
-                    This is a live simulation of how our AI handles an inbound service call. It qualifies the lead, confirms the job type, and offers booking — all without a human in the loop.
-                </p>
-                <div class="p-6 bg-white border-2 border-primary space-y-3 font-mono text-xs">
-                    <div class="flex justify-between border-b border-primary/10 pb-2">
-                        <span class="text-primary font-bold uppercase">Kernel Version</span>
-                        <span class="text-secondary">v4.2.0-STABLE</span>
-                    </div>
-                    <div class="flex justify-between border-b border-primary/10 pb-2">
-                        <span class="text-primary font-bold uppercase">Uptime</span>
-                        <span class="text-green-600">99.98%</span>
-                    </div>
-                    <code class="block text-primary/60 italic mt-4">SYS_LOG: Loading Receptionist_Protocol...</code>
-                    <code class="block text-primary/40">STATUS: Waiting for user input...</code>
+    <!-- LIVE VOICE DEMO -->
+    <section id="live-demo" class="bg-primary py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <div class="inline-block bg-secondary text-white px-4 py-2 font-black text-xs tracking-widest uppercase mb-4">
+                    🔴 LIVE — NOT A RECORDING
                 </div>
+                <h2 class="font-headline text-5xl md:text-7xl font-black text-white leading-[0.85] uppercase mb-4">
+                    TALK TO <span class="text-secondary">ARIA</span>
+                </h2>
+                <p class="text-white/70 font-bold text-xl max-w-2xl mx-auto">
+                    Aria is answering calls right now for Summit Home Services — a demo HVAC company we set up in 90 seconds. She'll qualify you, ask about your job, and try to book you in. This is exactly what your customers will hear.
+                </p>
             </div>
-            <div class="lg:col-span-7">
-                <div class="bg-primary p-1 bold-border technical-shadow">
-                    <div class="bg-[#e9eef9] p-4 flex items-center justify-between border-b-4 border-primary">
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start max-w-5xl mx-auto">
+
+                <!-- Left: Call Interface -->
+                <div class="bg-white border-4 border-secondary" style="box-shadow: 8px 8px 0 #fe6b00;">
+                    <!-- Header -->
+                    <div class="bg-[#00113a] border-b-4 border-secondary p-4 flex items-center justify-between">
                         <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 bg-primary text-secondary flex items-center justify-center">
-                                <span class="material-symbols-outlined">robot_2</span>
+                            <div class="w-10 h-10 bg-secondary flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white text-lg">support_agent</span>
                             </div>
                             <div>
-                                <div class="font-black text-primary text-sm uppercase">AI INSTALLER BOT</div>
-                                <div class="text-[9px] font-bold text-primary/60 uppercase">System Diagnostics: Active</div>
+                                <div class="font-black text-white text-sm uppercase">ARIA — Summit Home Services</div>
+                                <div class="flex items-center gap-2">
+                                    <div id="status-dot" class="w-2 h-2 rounded-full bg-gray-400"></div>
+                                    <span id="status-label" class="text-xs font-bold text-white/60 uppercase tracking-widest">READY</span>
+                                </div>
                             </div>
+                        </div>
+                        <div id="call-timer" class="font-mono font-black text-secondary text-lg hidden">00:00</div>
+                    </div>
+
+                    <!-- Waveform / Status Visual -->
+                    <div class="bg-[#f8f9ff] p-6 flex flex-col items-center justify-center" style="min-height:160px;">
+                        <!-- Idle state -->
+                        <div id="state-idle" class="text-center">
+                            <div class="w-20 h-20 bg-primary/10 border-4 border-primary flex items-center justify-center mx-auto mb-4">
+                                <span class="material-symbols-outlined text-primary text-4xl">mic</span>
+                            </div>
+                            <p class="font-bold text-primary/60 uppercase text-xs tracking-widest">Click below to start the call</p>
+                        </div>
+                        <!-- Active state -->
+                        <div id="state-active" class="text-center hidden">
+                            <div id="ai-speaking-indicator" class="flex items-center gap-1 justify-center mb-4 hidden">
+                                <span class="font-bold text-secondary uppercase text-xs tracking-widest mr-2">ARIA SPEAKING</span>
+                                <span class="wave-bar"></span><span class="wave-bar"></span><span class="wave-bar"></span><span class="wave-bar"></span><span class="wave-bar"></span>
+                            </div>
+                            <div id="user-speaking-indicator" class="flex items-center gap-1 justify-center mb-4 hidden">
+                                <span class="font-bold text-primary uppercase text-xs tracking-widest mr-2">YOU</span>
+                                <span class="wave-bar user-bar"></span><span class="wave-bar user-bar"></span><span class="wave-bar user-bar"></span><span class="wave-bar user-bar"></span><span class="wave-bar user-bar"></span>
+                            </div>
+                            <div id="silent-indicator" class="text-primary/40 font-bold text-xs uppercase tracking-widest">Listening...</div>
+                        </div>
+                        <!-- Ended state -->
+                        <div id="state-ended" class="text-center hidden">
+                            <div class="w-16 h-16 bg-green-100 border-4 border-green-600 flex items-center justify-center mx-auto mb-3">
+                                <span class="material-symbols-outlined text-green-600 text-3xl">check_circle</span>
+                            </div>
+                            <p class="font-black text-primary uppercase text-sm">Call Complete</p>
+                            <p class="font-bold text-primary/50 text-xs mt-1">This is what your customers experience</p>
                         </div>
                     </div>
-                    <div class="h-[400px] overflow-y-auto blueprint-grid bg-white p-6 space-y-6">
-                        <!-- Msg 1 -->
-                        <div class="flex gap-4">
-                            <div class="w-8 h-8 bg-primary/10 flex items-center justify-center shrink-0">
-                                <span class="material-symbols-outlined text-primary text-sm">precision_manufacturing</span>
-                            </div>
-                            <div class="bg-surface-container p-4 font-bold text-sm border-l-4 border-primary">
-                                Thanks for calling. You've reached the automated scheduling line. Are you calling to book a service, get an estimate, or something else?
-                            </div>
-                        </div>
-                        <!-- Msg 2 -->
-                        <div class="flex flex-row-reverse gap-4">
-                            <div class="w-8 h-8 bg-primary flex items-center justify-center shrink-0">
-                                <span class="material-symbols-outlined text-white text-sm">person</span>
-                            </div>
-                            <div class="bg-primary text-white p-4 font-bold text-sm">
-                                Yeah, my AC stopped working and I need someone out today if possible.
-                            </div>
-                        </div>
-                        <!-- Msg 3 -->
-                        <div class="flex gap-4">
-                            <div class="w-8 h-8 bg-primary/10 flex items-center justify-center shrink-0">
-                                <span class="material-symbols-outlined text-primary text-sm">precision_manufacturing</span>
-                            </div>
-                            <div class="bg-surface-container p-4 font-bold text-sm border-l-4 border-primary">
-                                Got it — AC repair, same-day if available. What's the address and are you the homeowner? I have a 2 PM slot open today. Want me to lock that in?
-                            </div>
-                        </div>
-                        <!-- Msg 4 -->
-                        <div class="flex flex-row-reverse gap-4">
-                            <div class="w-8 h-8 bg-primary flex items-center justify-center shrink-0">
-                                <span class="material-symbols-outlined text-white text-sm">person</span>
-                            </div>
-                            <div class="bg-primary text-white p-4 font-bold text-sm">
-                                Yes, 2 PM works. 4821 Maple Drive.
-                            </div>
-                        </div>
-                        <!-- Msg 5 -->
-                        <div class="flex gap-4">
-                            <div class="w-8 h-8 bg-primary/10 flex items-center justify-center shrink-0">
-                                <span class="material-symbols-outlined text-primary text-sm">precision_manufacturing</span>
-                            </div>
-                            <div class="bg-surface-container p-4 font-bold text-sm border-l-4 border-primary">
-                                Booked. You're confirmed for 2 PM today at 4821 Maple Drive. You'll get a text confirmation in the next 2 minutes. Anything else?
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-4 bg-white border-t-4 border-primary flex gap-2">
-                        <input class="flex-1 bg-surface-container-low border-2 border-primary/20 focus:border-primary px-4 font-bold text-sm uppercase" placeholder="ENTER COMMAND..." type="text"/>
-                        <button class="bg-secondary text-white px-6 py-3 font-black uppercase text-sm">SEND</button>
+
+                    <!-- Call Button -->
+                    <div class="p-4 border-t-4 border-primary">
+                        <button id="call-btn"
+                            class="w-full bg-secondary text-white py-4 font-black uppercase text-lg tracking-tight border-4 border-primary hover:translate-x-1 hover:-translate-y-1 transition-transform flex items-center justify-center gap-3"
+                            style="box-shadow: 4px 4px 0 #00113a;">
+                            <span class="material-symbols-outlined">phone</span>
+                            <span id="call-btn-label">CALL ARIA NOW</span>
+                        </button>
+                        <p class="text-center text-xs font-bold text-primary/40 uppercase tracking-widest mt-3">Uses your microphone — no phone required</p>
                     </div>
                 </div>
+
+                <!-- Right: Live Transcript -->
+                <div class="bg-white border-4 border-primary" style="box-shadow: 8px 8px 0 #00113a;">
+                    <div class="bg-primary p-4 border-b-4 border-secondary flex items-center justify-between">
+                        <div class="font-black text-white uppercase text-sm tracking-widest">LIVE TRANSCRIPT</div>
+                        <div class="text-xs font-bold text-white/40 uppercase">Auto-updating</div>
+                    </div>
+                    <div id="transcript-box" class="p-4 space-y-3 overflow-y-auto font-mono text-xs" style="min-height:300px; max-height:400px;">
+                        <div class="text-primary/30 font-bold uppercase tracking-widest text-center pt-8">
+                            — Start the call to see the transcript —
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- What just happened -->
+            <div class="max-w-5xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="bg-white/10 border-2 border-white/20 p-6 text-center">
+                    <div class="font-black text-secondary text-3xl mb-1">90 sec</div>
+                    <div class="font-bold text-white/70 uppercase text-xs tracking-widest">Time to set up Aria for a real business</div>
+                </div>
+                <div class="bg-white/10 border-2 border-white/20 p-6 text-center">
+                    <div class="font-black text-secondary text-3xl mb-1">24/7</div>
+                    <div class="font-bold text-white/70 uppercase text-xs tracking-widest">Never misses a call. Never puts them on hold.</div>
+                </div>
+                <div class="bg-white/10 border-2 border-white/20 p-6 text-center">
+                    <div class="font-black text-secondary text-3xl mb-1">$500/mo</div>
+                    <div class="font-bold text-white/70 uppercase text-xs tracking-widest">vs $4,516/mo for a human receptionist</div>
+                </div>
+            </div>
+
+            <div class="text-center mt-10">
+                <a href="form.html" class="inline-block bg-secondary text-white px-12 py-5 text-xl font-black uppercase border-4 border-white hover:translate-x-1 hover:-translate-y-1 transition-transform" style="box-shadow: 6px 6px 0 #fe6b00;">
+                    GET THIS FOR MY BUSINESS — FREE 14-DAY TRIAL
+                </a>
             </div>
         </div>
     </section>
+
+    <style>
+        .wave-bar {
+            display: inline-block;
+            width: 4px;
+            height: 20px;
+            background: #a04100;
+            border-radius: 0;
+            animation: wave 0.8s ease-in-out infinite;
+        }
+        .wave-bar:nth-child(2) { animation-delay: 0.1s; }
+        .wave-bar:nth-child(3) { animation-delay: 0.2s; }
+        .wave-bar:nth-child(4) { animation-delay: 0.3s; }
+        .wave-bar:nth-child(5) { animation-delay: 0.4s; }
+        .user-bar { background: #00113a; }
+        @keyframes wave {
+            0%, 100% { transform: scaleY(0.4); }
+            50% { transform: scaleY(1.4); }
+        }
+        #status-dot.live { background: #22c55e; animation: pulse-dot 1s infinite; }
+        @keyframes pulse-dot { 0%, 100% { opacity:1; } 50% { opacity:0.3; } }
+    </style>
+
+    <script>
+    (function() {
+        const callBtn      = document.getElementById('call-btn');
+        const callBtnLabel = document.getElementById('call-btn-label');
+        const statusDot    = document.getElementById('status-dot');
+        const statusLabel  = document.getElementById('status-label');
+        const stateIdle    = document.getElementById('state-idle');
+        const stateActive  = document.getElementById('state-active');
+        const stateEnded   = document.getElementById('state-ended');
+        const timerEl      = document.getElementById('call-timer');
+        const transcriptBox = document.getElementById('transcript-box');
+        const aiSpeak      = document.getElementById('ai-speaking-indicator');
+        const userSpeak    = document.getElementById('user-speaking-indicator');
+        const silentInd    = document.getElementById('silent-indicator');
+
+        let retellClient = null;
+        let callActive   = false;
+        let timerInterval = null;
+        let secondsElapsed = 0;
+
+        function setStatus(state) {
+            statusDot.className = 'w-2 h-2 rounded-full';
+            if (state === 'live') {
+                statusDot.classList.add('bg-green-400', 'live');
+                statusLabel.textContent = 'LIVE';
+            } else if (state === 'connecting') {
+                statusDot.classList.add('bg-yellow-400');
+                statusLabel.textContent = 'CONNECTING...';
+            } else if (state === 'ended') {
+                statusDot.classList.add('bg-gray-400');
+                statusLabel.textContent = 'CALL ENDED';
+            } else {
+                statusDot.classList.add('bg-gray-400');
+                statusLabel.textContent = 'READY';
+            }
+        }
+
+        function startTimer() {
+            secondsElapsed = 0;
+            timerEl.classList.remove('hidden');
+            timerInterval = setInterval(() => {
+                secondsElapsed++;
+                const m = String(Math.floor(secondsElapsed/60)).padStart(2,'0');
+                const s = String(secondsElapsed%60).padStart(2,'0');
+                timerEl.textContent = `${m}:${s}`;
+            }, 1000);
+        }
+
+        function stopTimer() {
+            clearInterval(timerInterval);
+        }
+
+        function addTranscriptLine(speaker, text) {
+            const isEmpty = transcriptBox.querySelector('.text-primary\\/30');
+            if (isEmpty) transcriptBox.innerHTML = '';
+            const line = document.createElement('div');
+            const isAI = speaker === 'agent';
+            line.className = `flex gap-2 ${isAI ? '' : 'flex-row-reverse'}`;
+            line.innerHTML = `
+                <div class="font-black text-[10px] uppercase tracking-widest shrink-0 mt-1 ${isAI ? 'text-secondary' : 'text-primary'}">
+                    ${isAI ? 'ARIA' : 'YOU'}
+                </div>
+                <div class="flex-1 p-2 border-l-2 ${isAI ? 'border-secondary text-primary' : 'border-primary text-primary/70 text-right border-l-0 border-r-2'}">
+                    ${text}
+                </div>`;
+            transcriptBox.appendChild(line);
+            transcriptBox.scrollTop = transcriptBox.scrollHeight;
+        }
+
+        async function startCall() {
+            if (callActive) {
+                // End call
+                if (retellClient) retellClient.stopCall();
+                return;
+            }
+
+            callBtn.disabled = true;
+            callBtnLabel.textContent = 'CONNECTING...';
+            setStatus('connecting');
+
+            try {
+                const res = await fetch('/api/create-web-call', { method: 'POST' });
+                const data = await res.json();
+
+                if (!data.access_token) throw new Error('No access token');
+
+                // Use the Retell Web SDK
+                retellClient = new RetellWebClient();
+
+                retellClient.on('call_started', () => {
+                    callActive = true;
+                    callBtn.disabled = false;
+                    callBtnLabel.textContent = 'END CALL';
+                    callBtn.classList.replace('bg-secondary', 'bg-red-600');
+                    setStatus('live');
+                    stateIdle.classList.add('hidden');
+                    stateActive.classList.remove('hidden');
+                    startTimer();
+                });
+
+                retellClient.on('call_ended', () => {
+                    callActive = false;
+                    callBtn.disabled = false;
+                    callBtnLabel.textContent = 'CALL ARIA AGAIN';
+                    callBtn.classList.replace('bg-red-600', 'bg-secondary');
+                    setStatus('ended');
+                    stateActive.classList.add('hidden');
+                    stateEnded.classList.remove('hidden');
+                    stopTimer();
+                });
+
+                retellClient.on('agent_start_talking', () => {
+                    aiSpeak.classList.remove('hidden');
+                    userSpeak.classList.add('hidden');
+                    silentInd.classList.add('hidden');
+                });
+
+                retellClient.on('agent_stop_talking', () => {
+                    aiSpeak.classList.add('hidden');
+                    silentInd.classList.remove('hidden');
+                });
+
+                retellClient.on('update', (update) => {
+                    if (update.transcript) {
+                        transcriptBox.innerHTML = '';
+                        update.transcript.forEach(t => addTranscriptLine(t.role, t.content));
+                    }
+                    if (update.event === 'audio_captured') {
+                        userSpeak.classList.remove('hidden');
+                        silentInd.classList.add('hidden');
+                        setTimeout(() => {
+                            userSpeak.classList.add('hidden');
+                            silentInd.classList.remove('hidden');
+                        }, 1500);
+                    }
+                });
+
+                retellClient.on('error', (err) => {
+                    console.error('Retell error:', err);
+                    callBtnLabel.textContent = 'ERROR — TRY AGAIN';
+                    callBtn.disabled = false;
+                    setStatus('ready');
+                });
+
+                await retellClient.startCall({ accessToken: data.access_token });
+
+            } catch (err) {
+                console.error(err);
+                callBtnLabel.textContent = 'FAILED — TRY AGAIN';
+                callBtn.disabled = false;
+                setStatus('ready');
+            }
+        }
+
+        callBtn.addEventListener('click', startCall);
+    })();
+    </script>
 
     <!-- Final CTA: Direct Mail Coupon Style -->
     <section class="max-w-7xl mx-auto px-6 pb-24">
