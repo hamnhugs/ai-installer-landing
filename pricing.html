@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Pricing | AI INSTALLER — $500/Month, All-In</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;family=Work+Sans:wght@700;800;900&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-variant": "#dde3ee",
+              "on-background": "#161c24",
+              "primary-container": "#002366",
+              "on-primary-fixed": "#00174a",
+              "on-tertiary": "#ffffff",
+              "background": "#f8f9ff",
+              "inverse-primary": "#b3c5ff",
+              "surface": "#f8f9ff",
+              "error": "#ba1a1a",
+              "on-secondary-fixed-variant": "#7a3000",
+              "primary": "#00113a",
+              "surface-container-high": "#e3e8f4",
+              "outline": "#757682",
+              "secondary-fixed": "#ffdbcc",
+              "on-surface-variant": "#444650",
+              "surface-container-highest": "#dde3ee",
+              "on-tertiary-container": "#8191a2",
+              "surface-container-low": "#eef4ff",
+              "tertiary-container": "#1a2a37",
+              "surface-dim": "#d5dae5",
+              "surface-tint": "#435b9f",
+              "on-tertiary-fixed-variant": "#394857",
+              "primary-fixed": "#dbe1ff",
+              "tertiary": "#051522",
+              "on-error-container": "#93000a",
+              "on-primary-fixed-variant": "#2a4386",
+              "on-tertiary-fixed": "#0d1d2a",
+              "surface-container-lowest": "#ffffff",
+              "on-primary": "#ffffff",
+              "on-primary-container": "#758dd5",
+              "inverse-surface": "#2b3139",
+              "secondary-container": "#fe6b00",
+              "tertiary-fixed-dim": "#b8c8da",
+              "on-secondary": "#ffffff",
+              "secondary-fixed-dim": "#ffb693",
+              "on-secondary-container": "#572000",
+              "secondary": "#a04100",
+              "on-secondary-fixed": "#351000",
+              "surface-container": "#e9eef9",
+              "on-surface": "#161c24",
+              "inverse-on-surface": "#ecf1fc",
+              "error-container": "#ffdad6",
+              "surface-bright": "#f8f9ff",
+              "on-error": "#ffffff",
+              "outline-variant": "#c5c6d2",
+              "primary-fixed-dim": "#b3c5ff",
+              "tertiary-fixed": "#d4e4f6"
+            },
+            fontFamily: {
+              "headline": ["Work Sans", "sans-serif"],
+              "body": ["Inter", "sans-serif"],
+              "label": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+    <style>
+        .blueprint-grid {
+            background-image: linear-gradient(#00113a08 1px, transparent 1px), linear-gradient(90deg, #00113a08 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 24;
+        }
+        .stamp-badge {
+            transform: rotate(-12deg);
+            border: 4px double currentColor;
+            padding: 4px 12px;
+            font-weight: 900;
+            display: inline-block;
+            text-transform: uppercase;
+        }
+        .tear-off {
+            background-image: radial-gradient(circle, #f8f9ff 2px, transparent 2px);
+            background-size: 16px 16px;
+            background-position: 0 0;
+            background-repeat: repeat-x;
+            height: 8px;
+            width: 100%;
+            margin: 20px 0;
+        }
+        .bold-border {
+            border: 4px solid #00113a;
+        }
+        .technical-shadow {
+            box-shadow: 10px 10px 0px 0px #00113a;
+        }
+        .check-yes::before { content: "✓"; color: #16a34a; font-weight: 900; margin-right: 8px; }
+        .check-no::before  { content: "✗"; color: #dc2626; font-weight: 900; margin-right: 8px; }
+    </style>
+</head>
+<body class="bg-[#f0f2f5] font-body text-on-background blueprint-grid">
+
+    <!-- Nav -->
+    <nav class="w-full bg-white border-b-[6px] border-primary px-6 py-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex flex-col">
+                <a href="index.html" class="text-4xl font-black text-primary tracking-tighter font-headline leading-none">AI INSTALLER</a>
+                <div class="text-[10px] font-bold tracking-[.3em] text-secondary uppercase mt-1">Industrial Grade Communication Systems</div>
+            </div>
+            <div class="hidden lg:flex items-center space-x-6 text-sm font-black uppercase tracking-tight">
+                <a class="hover:text-secondary border-b-2 border-transparent hover:border-secondary transition-all" href="#">Solutions</a>
+                <a class="hover:text-secondary border-b-2 border-transparent hover:border-secondary transition-all" href="#">Hardware</a>
+                <a class="text-secondary border-b-2 border-secondary" href="pricing.html">Pricing</a>
+                <a class="hover:text-secondary border-b-2 border-transparent hover:border-secondary transition-all" href="#">Documentation</a>
+            </div>
+            <div class="flex items-center gap-3">
+                <div class="stamp-badge text-primary border-primary text-xs mr-4 hidden sm:block">EST. 2024</div>
+                <button class="bg-primary text-white px-6 py-3 font-black uppercase text-sm hover:translate-x-1 hover:-translate-y-1 transition-transform technical-shadow">GET STARTED</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero: Pricing Shock -->
+    <header class="max-w-7xl mx-auto px-6 py-16 md:py-24">
+        <div class="text-center max-w-5xl mx-auto">
+            <div class="inline-block bg-primary text-white px-4 py-2 font-black text-xs tracking-widest uppercase mb-8">
+                SPECIFICATION SHEET: PRICING &amp; COST ANALYSIS
+            </div>
+            <h1 class="font-headline text-6xl md:text-8xl font-black text-primary leading-[0.85] tracking-tighter mb-8 uppercase">
+                A FULL-TIME RECEPTIONIST COSTS <span class="text-red-600">$4,500/MO.</span><br/>
+                OURS COSTS <span class="text-secondary">$500.</span>
+            </h1>
+            <div class="border-l-8 border-primary pl-8 text-left max-w-3xl mx-auto mb-12">
+                <p class="font-bold text-xl md:text-2xl text-on-background leading-tight">
+                    Both answer every call. Both book appointments. Only one requires payroll taxes, health insurance, sick days, and an HR department.
+                </p>
+            </div>
+            <button class="bg-secondary text-white px-12 py-6 text-2xl font-black uppercase tracking-tight bold-border technical-shadow hover:translate-x-1 hover:-translate-y-1 transition-transform">
+                START FREE 14-DAY TRIAL
+            </button>
+            <p class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mt-4">No credit card required. Cancel anytime.</p>
+        </div>
+    </header>
+
+    <!-- Separation -->
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="border-t-4 border-dotted border-outline-variant my-4 relative">
+            <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#f0f2f5] px-4 font-black text-[10px] tracking-[0.5em] text-outline uppercase">CUT ALONG DOTTED LINE</span>
+        </div>
+    </div>
+
+    <!-- Cost Comparison Table -->
+    <section class="max-w-7xl mx-auto px-6 py-16">
+        <div class="mb-12 text-center">
+            <div class="inline-block px-3 py-1 border-2 border-primary text-primary font-black text-[10px] tracking-widest uppercase mb-4">COMPARATIVE ANALYSIS: FIELD REPORT</div>
+            <h2 class="font-headline text-5xl font-black text-primary uppercase">THE NUMBERS DON'T LIE</h2>
+        </div>
+
+        <!-- Mobile: stacked cards -->
+        <div class="block lg:hidden space-y-6">
+            <!-- Human Employee -->
+            <div class="bg-white bold-border p-6 border-l-8 border-red-600">
+                <div class="font-black text-lg uppercase text-red-600 mb-4 flex items-center gap-2">
+                    <span class="material-symbols-outlined">person</span> Full-Time Employee
+                </div>
+                <div class="text-5xl font-black text-primary mb-1">$4,516</div>
+                <div class="text-xs font-bold uppercase text-on-surface-variant mb-4">Per Month, Real Employer Cost</div>
+                <ul class="space-y-2 text-sm font-bold text-on-surface-variant">
+                    <li class="check-no">Salary alone: $3,049/mo (BLS avg)</li>
+                    <li class="check-no">Health insurance: +$583/mo</li>
+                    <li class="check-no">Payroll taxes: +$275/mo</li>
+                    <li class="check-no">PTO, retirement, training: +$600/mo</li>
+                    <li class="check-no">Works 8 hrs/day, 5 days only</li>
+                    <li class="check-no">Sick days, turnover, HR drama</li>
+                    <li class="check-no">Doesn't answer after hours</li>
+                </ul>
+            </div>
+            <!-- Human Answering Service -->
+            <div class="bg-white bold-border p-6 border-l-8 border-yellow-500">
+                <div class="font-black text-lg uppercase text-yellow-600 mb-4 flex items-center gap-2">
+                    <span class="material-symbols-outlined">headset_mic</span> Human Answering Service
+                </div>
+                <div class="text-5xl font-black text-primary mb-1">$245–$1,850</div>
+                <div class="text-xs font-bold uppercase text-on-surface-variant mb-4">Per Month (Ruby, Smith.ai, Posh)</div>
+                <ul class="space-y-2 text-sm font-bold text-on-surface-variant">
+                    <li class="check-no">Billed per minute — overages stack up</li>
+                    <li class="check-no">Setup fees: $50–$500</li>
+                    <li class="check-no">No lead qualification — just messages</li>
+                    <li class="check-no">No CRM or calendar integration</li>
+                    <li class="check-yes">24/7 available (premium tiers only)</li>
+                    <li class="check-no">Can't book appointments</li>
+                    <li class="check-no">No follow-up capability</li>
+                </ul>
+            </div>
+            <!-- Cheap AI -->
+            <div class="bg-white bold-border p-6 border-l-8 border-blue-400">
+                <div class="font-black text-lg uppercase text-blue-600 mb-4 flex items-center gap-2">
+                    <span class="material-symbols-outlined">smart_toy</span> Basic AI (Dialzara, VoiceNation)
+                </div>
+                <div class="text-5xl font-black text-primary mb-1">$29–$300</div>
+                <div class="text-xs font-bold uppercase text-on-surface-variant mb-4">Per Month</div>
+                <ul class="space-y-2 text-sm font-bold text-on-surface-variant">
+                    <li class="check-yes">Low monthly cost</li>
+                    <li class="check-yes">24/7 call answering</li>
+                    <li class="check-no">Generic, not trained on your business</li>
+                    <li class="check-no">No lead qualification</li>
+                    <li class="check-no">No appointment booking</li>
+                    <li class="check-no">No automatic follow-up</li>
+                    <li class="check-no">Just answers and takes a message</li>
+                </ul>
+            </div>
+            <!-- AI Installer -->
+            <div class="bg-primary text-white p-6 border-[6px] border-secondary shadow-[12px_12px_0px_0px_rgba(160,65,0,1)]">
+                <div class="font-black text-lg uppercase text-secondary mb-4 flex items-center gap-2">
+                    <span class="material-symbols-outlined">precision_manufacturing</span> AI Installer ← YOU ARE HERE
+                </div>
+                <div class="text-5xl font-black mb-1">$500</div>
+                <div class="text-xs font-bold uppercase text-white/60 mb-4">Per Month, All-In. No Overages.</div>
+                <ul class="space-y-2 text-sm font-bold text-white/90">
+                    <li class="check-yes">Trained on your business specifically</li>
+                    <li class="check-yes">Answers every call in under 60 seconds</li>
+                    <li class="check-yes">Qualifies the lead on the call</li>
+                    <li class="check-yes">Books appointments to your calendar</li>
+                    <li class="check-yes">Automatic follow-up until they book</li>
+                    <li class="check-yes">24/7/365, nights, weekends, holidays</li>
+                    <li class="check-yes">No setup fee. No per-minute billing.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Desktop: 4-column table -->
+        <div class="hidden lg:block overflow-x-auto">
+            <table class="w-full border-4 border-primary technical-shadow text-sm">
+                <thead>
+                    <tr class="border-b-4 border-primary">
+                        <th class="bg-white p-6 text-left font-black uppercase text-xs tracking-widest text-on-surface-variant w-1/5">SPEC</th>
+                        <th class="bg-red-50 p-6 text-center border-l-4 border-primary">
+                            <div class="font-black text-red-600 uppercase text-xs tracking-wide mb-2">Full-Time Employee</div>
+                            <div class="font-black text-3xl text-primary">$4,516</div>
+                            <div class="text-[10px] font-bold text-on-surface-variant uppercase tracking-wide mt-1">/ Month (real cost)</div>
+                        </th>
+                        <th class="bg-yellow-50 p-6 text-center border-l-4 border-primary">
+                            <div class="font-black text-yellow-700 uppercase text-xs tracking-wide mb-2">Human Answering Svc</div>
+                            <div class="font-black text-3xl text-primary">$245–$1,850</div>
+                            <div class="text-[10px] font-bold text-on-surface-variant uppercase tracking-wide mt-1">/ Month (per-min overages)</div>
+                        </th>
+                        <th class="bg-blue-50 p-6 text-center border-l-4 border-primary">
+                            <div class="font-black text-blue-700 uppercase text-xs tracking-wide mb-2">Basic AI Bot</div>
+                            <div class="font-black text-3xl text-primary">$29–$300</div>
+                            <div class="text-[10px] font-bold text-on-surface-variant uppercase tracking-wide mt-1">/ Month</div>
+                        </th>
+                        <th class="bg-primary p-6 text-center border-l-4 border-secondary border-l-[6px]">
+                            <div class="font-black text-secondary uppercase text-xs tracking-wide mb-2">AI Installer</div>
+                            <div class="font-black text-4xl text-white">$500</div>
+                            <div class="text-[10px] font-bold text-white/60 uppercase tracking-wide mt-1">/ Month, All-In</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Row template: spec | human | answering | cheap AI | us -->
+                    <tr class="border-b-2 border-outline-variant">
+                        <td class="bg-white p-4 font-black uppercase text-xs text-on-surface-variant">Availability</td>
+                        <td class="bg-red-50 p-4 text-center border-l-4 border-primary"><span class="check-no font-bold text-sm">8hrs/day, weekdays</span></td>
+                        <td class="bg-yellow-50 p-4 text-center border-l-4 border-primary"><span class="check-yes font-bold text-sm">24/7 (premium plans)</span></td>
+                        <td class="bg-blue-50 p-4 text-center border-l-4 border-primary"><span class="check-yes font-bold text-sm">24/7</span></td>
+                        <td class="bg-primary/5 p-4 text-center border-l-[6px] border-secondary"><span class="check-yes font-bold text-sm text-primary">24/7 — all plans</span></td>
+                    </tr>
+                    <tr class="border-b-2 border-outline-variant">
+                        <td class="bg-white p-4 font-black uppercase text-xs text-on-surface-variant">Answers In 60 Seconds</td>
+                        <td class="bg-red-50 p-4 text-center border-l-4 border-primary"><span class="check-no font-bold text-sm">Depends on hold queue</span></td>
+                        <td class="bg-yellow-50 p-4 text-center border-l-4 border-primary"><span class="check-yes font-bold text-sm">Usually, but varies</span></td>
+                        <td class="bg-blue-50 p-4 text-center border-l-4 border-primary"><span class="check-yes font-bold text-sm">Instant</span></td>
+                        <td class="bg-primary/5 p-4 text-center border-l-[6px] border-secondary"><span class="check-yes font-bold text-sm text-primary">Instant, every time</span></td>
+                    </tr>
+                    <tr class="border-b-2 border-outline-variant">
+                        <td class="bg-white p-4 font-black uppercase text-xs text-on-surface-variant">Lead Qualification</td>
+                        <td class="bg-red-50 p-4 text-center border-l-4 border-primary"><span class="check-yes font-bold text-sm">Yes (if trained)</span></td>
+                        <td class="bg-yellow-50 p-4 text-center border-l-4 border-primary"><span class="check-no font-bold text-sm">Message-taking only</span></td>
+                        <td class="bg-blue-50 p-4 text-center border-l-4 border-primary"><span class="check-no font-bold text-sm">Generic scripts only</span></td>
+                        <td class="bg-primary/5 p-4 text-center border-l-[6px] border-secondary"><span class="check-yes font-bold text-sm text-primary">Full qualification, your business</span></td>
+                    </tr>
+                    <tr class="border-b-2 border-outline-variant">
+                        <td class="bg-white p-4 font-black uppercase text-xs text-on-surface-variant">Books Appointments</td>
+                        <td class="bg-red-50 p-4 text-center border-l-4 border-primary"><span class="check-yes font-bold text-sm">Yes</span></td>
+                        <td class="bg-yellow-50 p-4 text-center border-l-4 border-primary"><span class="check-no font-bold text-sm">No</span></td>
+                        <td class="bg-blue-50 p-4 text-center border-l-4 border-primary"><span class="check-no font-bold text-sm">No</span></td>
+                        <td class="bg-primary/5 p-4 text-center border-l-[6px] border-secondary"><span class="check-yes font-bold text-sm text-primary">Yes — syncs to your calendar</span></td>
+                    </tr>
+                    <tr class="border-b-2 border-outline-variant">
+                        <td class="bg-white p-4 font-black uppercase text-xs text-on-surface-variant">Automatic Follow-Up</td>
+                        <td class="bg-red-50 p-4 text-center border-l-4 border-primary"><span class="check-no font-bold text-sm">Only if remembered</span></td>
+                        <td class="bg-yellow-50 p-4 text-center border-l-4 border-primary"><span class="check-no font-bold text-sm">No</span></td>
+                        <td class="bg-blue-50 p-4 text-center border-l-4 border-primary"><span class="check-no font-bold text-sm">No</span></td>
+                        <td class="bg-primary/5 p-4 text-center border-l-[6px] border-secondary"><span class="check-yes font-bold text-sm text-primary">Yes — automated sequences</span></td>
+                    </tr>
+                    <tr class="border-b-2 border-outline-variant">
+                        <td class="bg-white p-4 font-black uppercase text-xs text-on-surface-variant">Sick Days / Turnover</td>
+                        <td class="bg-red-50 p-4 text-center border-l-4 border-primary"><span class="check-no font-bold text-sm">Yes — your problem</span></td>
+                        <td class="bg-yellow-50 p-4 text-center border-l-4 border-primary"><span class="check-yes font-bold text-sm">Not your concern</span></td>
+                        <td class="bg-blue-50 p-4 text-center border-l-4 border-primary"><span class="check-yes font-bold text-sm">Never</span></td>
+                        <td class="bg-primary/5 p-4 text-center border-l-[6px] border-secondary"><span class="check-yes font-bold text-sm text-primary">Never, by design</span></td>
+                    </tr>
+                    <tr class="border-b-2 border-outline-variant">
+                        <td class="bg-white p-4 font-black uppercase text-xs text-on-surface-variant">Per-Minute Billing</td>
+                        <td class="bg-red-50 p-4 text-center border-l-4 border-primary"><span class="check-no font-bold text-sm">No (salary)</span></td>
+                        <td class="bg-yellow-50 p-4 text-center border-l-4 border-primary"><span class="check-no font-bold text-sm">Yes — adds up fast</span></td>
+                        <td class="bg-blue-50 p-4 text-center border-l-4 border-primary"><span class="check-yes font-bold text-sm">Usually flat rate</span></td>
+                        <td class="bg-primary/5 p-4 text-center border-l-[6px] border-secondary"><span class="check-yes font-bold text-sm text-primary">Flat $500. No surprises.</span></td>
+                    </tr>
+                    <tr>
+                        <td class="bg-white p-4 font-black uppercase text-xs text-on-surface-variant">Annual Cost</td>
+                        <td class="bg-red-50 p-4 text-center border-l-4 border-primary"><span class="font-black text-red-600 text-xl">$54,200</span></td>
+                        <td class="bg-yellow-50 p-4 text-center border-l-4 border-primary"><span class="font-black text-yellow-700 text-xl">$2,940–$22,200</span></td>
+                        <td class="bg-blue-50 p-4 text-center border-l-4 border-primary"><span class="font-black text-blue-700 text-xl">$348–$3,600</span></td>
+                        <td class="bg-primary p-4 text-center border-l-[6px] border-secondary"><span class="font-black text-secondary text-2xl">$6,000</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Separation -->
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="border-t-4 border-dotted border-outline-variant my-4 relative">
+            <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#f0f2f5] px-4 font-black text-[10px] tracking-[0.5em] text-outline uppercase">FIELD DATA</span>
+        </div>
+    </div>
+
+    <!-- Missed Call Statistics -->
+    <section class="max-w-7xl mx-auto px-6 py-16">
+        <div class="mb-12 text-center">
+            <div class="inline-block px-3 py-1 border-2 border-primary text-primary font-black text-[10px] tracking-widest uppercase mb-4">INCIDENT REPORT: UNANSWERED CALLS</div>
+            <h2 class="font-headline text-5xl font-black text-primary uppercase leading-none">THE SILENT REVENUE LEAK</h2>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-white bold-border p-8 text-center technical-shadow">
+                <div class="font-black text-6xl text-red-600 leading-none mb-3">62%</div>
+                <div class="font-black text-xs uppercase tracking-widest text-primary mb-3">Of Calls Go Unanswered</div>
+                <p class="text-sm text-on-surface-variant font-medium">Small business average during normal hours. Nearly two-thirds of callers never reach a human.</p>
+            </div>
+            <div class="bg-white bold-border p-8 text-center technical-shadow">
+                <div class="font-black text-6xl text-red-600 leading-none mb-3">85%</div>
+                <div class="font-black text-xs uppercase tracking-widest text-primary mb-3">Never Call Back</div>
+                <p class="text-sm text-on-surface-variant font-medium">Of callers who don't get through on the first try. They go straight to your competitor.</p>
+            </div>
+            <div class="bg-white bold-border p-8 text-center technical-shadow">
+                <div class="font-black text-6xl text-secondary leading-none mb-3">$1,200</div>
+                <div class="font-black text-xs uppercase tracking-widest text-primary mb-3">Lost Per Missed Call</div>
+                <p class="text-sm text-on-surface-variant font-medium">Average revenue lost per unanswered call for home service businesses. Each missed call has a price tag.</p>
+            </div>
+            <div class="bg-white bold-border p-8 text-center technical-shadow">
+                <div class="font-black text-6xl text-secondary leading-none mb-3">100×</div>
+                <div class="font-black text-xs uppercase tracking-widest text-primary mb-3">More Likely To Book</div>
+                <p class="text-sm text-on-surface-variant font-medium">When a lead is contacted within 5 minutes vs. 30+ minutes. Speed is the variable that closes jobs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROI Calculator: Static -->
+    <section class="bg-primary text-white py-24 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: linear-gradient(white 1px, transparent 1px), linear-gradient(90deg, white 1px, transparent 1px); background-size: 30px 30px;"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="text-center mb-16">
+                <div class="inline-block px-3 py-1 border-2 border-secondary text-secondary font-black text-[10px] tracking-widest uppercase mb-4">FIG 2.1: ROI PROJECTION MODEL</div>
+                <h2 class="font-headline text-5xl md:text-7xl font-black uppercase tracking-tighter italic">RUN THE MATH</h2>
+                <div class="w-32 h-2 bg-secondary mx-auto mt-6"></div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                <!-- Left: The scenario -->
+                <div class="space-y-8">
+                    <div class="bg-white/10 p-6 border-2 border-white/30">
+                        <div class="font-black text-xs uppercase tracking-widest text-secondary mb-4">EXAMPLE SCENARIO: HVAC CONTRACTOR</div>
+                        <div class="space-y-4 font-mono text-sm">
+                            <div class="flex justify-between border-b border-white/20 pb-2">
+                                <span class="text-white/70">Inbound calls / month</span>
+                                <span class="font-black text-white">60 calls</span>
+                            </div>
+                            <div class="flex justify-between border-b border-white/20 pb-2">
+                                <span class="text-white/70">Currently missed (27% avg)</span>
+                                <span class="font-black text-red-400">~16 calls lost</span>
+                            </div>
+                            <div class="flex justify-between border-b border-white/20 pb-2">
+                                <span class="text-white/70">Average job value</span>
+                                <span class="font-black text-white">$400</span>
+                            </div>
+                            <div class="flex justify-between border-b border-white/20 pb-2">
+                                <span class="text-white/70">Revenue lost / month</span>
+                                <span class="font-black text-red-400">$6,400</span>
+                            </div>
+                            <div class="flex justify-between border-b border-white/20 pb-2">
+                                <span class="text-white/70">AI captures just 4 of 16</span>
+                                <span class="font-black text-green-400">+$1,600 recovered</span>
+                            </div>
+                            <div class="flex justify-between border-b border-white/20 pb-2">
+                                <span class="text-white/70">AI Installer monthly cost</span>
+                                <span class="font-black text-white">−$500</span>
+                            </div>
+                            <div class="flex justify-between pt-2">
+                                <span class="font-black text-white uppercase">Net gain, month one</span>
+                                <span class="font-black text-secondary text-xl">+$1,100</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-white/60 text-sm font-medium">That's with a conservative capture rate. Most businesses recover 60–80% of previously missed calls once a 24/7 answering system is live.</p>
+                </div>
+                <!-- Right: The 3 scenarios -->
+                <div class="space-y-6">
+                    <div class="font-black text-xs uppercase tracking-widest text-secondary mb-6">THREE CAPTURE SCENARIOS — MONTHLY NET GAIN</div>
+                    <div class="bg-white/10 border-2 border-white/20 p-6 flex items-center justify-between">
+                        <div>
+                            <div class="font-black uppercase text-sm">Conservative</div>
+                            <div class="text-white/60 text-xs mt-1">Captures 2 extra jobs/month × $400</div>
+                        </div>
+                        <div class="text-right">
+                            <div class="font-black text-2xl text-white">$800</div>
+                            <div class="text-green-400 font-black text-xs uppercase">+$300 net</div>
+                        </div>
+                    </div>
+                    <div class="bg-secondary border-4 border-white p-6 flex items-center justify-between shadow-[6px_6px_0_white]">
+                        <div>
+                            <div class="font-black uppercase text-sm text-white">Realistic</div>
+                            <div class="text-white/70 text-xs mt-1">Captures 4 extra jobs/month × $400</div>
+                            <div class="stamp-badge text-white border-white text-[9px] mt-3 inline-block">most common</div>
+                        </div>
+                        <div class="text-right">
+                            <div class="font-black text-3xl text-white">$1,600</div>
+                            <div class="text-white font-black text-xs uppercase">+$1,100 net</div>
+                        </div>
+                    </div>
+                    <div class="bg-white/10 border-2 border-white/20 p-6 flex items-center justify-between">
+                        <div>
+                            <div class="font-black uppercase text-sm">High-performing</div>
+                            <div class="text-white/60 text-xs mt-1">Captures 8 extra jobs/month × $400</div>
+                        </div>
+                        <div class="text-right">
+                            <div class="font-black text-2xl text-white">$3,200</div>
+                            <div class="text-green-400 font-black text-xs uppercase">+$2,700 net</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Included: Spec Sheet Style -->
+    <section class="max-w-7xl mx-auto px-6 py-20">
+        <div class="mb-12 text-center">
+            <div class="inline-block px-3 py-1 border-2 border-primary text-primary font-black text-[10px] tracking-widest uppercase mb-4">TECHNICAL SPECIFICATIONS: $500/MONTH PLAN</div>
+            <h2 class="font-headline text-5xl font-black text-primary uppercase">EVERYTHING INCLUDED.</h2>
+            <p class="text-xl font-bold text-on-surface-variant mt-4 uppercase tracking-tight">No tiers. No upgrades. No per-minute billing. One price.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white bold-border p-8">
+                <span class="material-symbols-outlined text-secondary text-4xl mb-4 block">call</span>
+                <h3 class="font-black text-xl uppercase tracking-tight text-primary mb-3">24/7 Call Answering</h3>
+                <p class="text-on-surface-variant font-medium text-sm leading-relaxed">Every inbound call answered instantly. Nights, weekends, holidays. No voicemail. No hold music. No exceptions.</p>
+            </div>
+            <div class="bg-white bold-border p-8">
+                <span class="material-symbols-outlined text-secondary text-4xl mb-4 block">fact_check</span>
+                <h3 class="font-black text-xl uppercase tracking-tight text-primary mb-3">Lead Qualification</h3>
+                <p class="text-on-surface-variant font-medium text-sm leading-relaxed">The AI asks the right questions — job type, location, urgency, budget — and determines if the lead is worth booking. Trained on your business, not a generic script.</p>
+            </div>
+            <div class="bg-white bold-border p-8">
+                <span class="material-symbols-outlined text-secondary text-4xl mb-4 block">calendar_month</span>
+                <h3 class="font-black text-xl uppercase tracking-tight text-primary mb-3">Appointment Booking</h3>
+                <p class="text-on-surface-variant font-medium text-sm leading-relaxed">Qualified leads are booked directly into your calendar. No call-back needed. No scheduling back-and-forth. The job is locked in before the call ends.</p>
+            </div>
+            <div class="bg-white bold-border p-8">
+                <span class="material-symbols-outlined text-secondary text-4xl mb-4 block">forward_to_inbox</span>
+                <h3 class="font-black text-xl uppercase tracking-tight text-primary mb-3">Automatic Follow-Up</h3>
+                <p class="text-on-surface-variant font-medium text-sm leading-relaxed">Leads who don't book on the first call get follow-up messages automatically — text and email — until they commit or opt out. Persistent without being overbearing.</p>
+            </div>
+            <div class="bg-white bold-border p-8">
+                <span class="material-symbols-outlined text-secondary text-4xl mb-4 block">memory</span>
+                <h3 class="font-black text-xl uppercase tracking-tight text-primary mb-3">Custom Business Training</h3>
+                <p class="text-on-surface-variant font-medium text-sm leading-relaxed">We train the system on your specific services, service area, pricing, and policies. It sounds like your business — not a call center.</p>
+            </div>
+            <div class="bg-white bold-border p-8">
+                <span class="material-symbols-outlined text-secondary text-4xl mb-4 block">analytics</span>
+                <h3 class="font-black text-xl uppercase tracking-tight text-primary mb-3">Monthly Performance Reports</h3>
+                <p class="text-on-surface-variant font-medium text-sm leading-relaxed">See every call, every booking, every follow-up. Know exactly how many leads were captured and what revenue was recovered each month.</p>
+            </div>
+        </div>
+        <div class="mt-12 bg-primary p-8 text-white flex flex-col md:flex-row items-center justify-between gap-6 bold-border technical-shadow">
+            <div>
+                <div class="font-black text-2xl uppercase mb-2">What You Don't Pay For</div>
+                <div class="text-white/70 font-bold text-sm space-x-6">
+                    <span>✗ Setup fee</span>
+                    <span>✗ Per-minute charges</span>
+                    <span>✗ Overage fees</span>
+                    <span>✗ Payroll taxes</span>
+                    <span>✗ Health insurance</span>
+                    <span>✗ Training costs</span>
+                </div>
+            </div>
+            <div class="shrink-0 text-center">
+                <div class="text-5xl font-black text-secondary">$500</div>
+                <div class="text-[10px] font-bold uppercase tracking-widest text-white/60">Flat. Monthly. Done.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="max-w-7xl mx-auto px-6 pb-24">
+        <div class="bg-white border-[10px] border-primary p-12 text-center relative overflow-hidden">
+            <div class="absolute -top-10 -left-10 w-40 h-40 bg-secondary rotate-45 flex items-end justify-center pb-6">
+                <span class="text-white font-black text-xs uppercase -rotate-45">ACT NOW</span>
+            </div>
+            <h2 class="font-headline text-5xl md:text-6xl font-black text-primary mb-6 uppercase leading-[0.9]">
+                READY TO STOP LOSING JOBS TO VOICEMAIL?
+            </h2>
+            <p class="text-xl font-black text-secondary uppercase mb-10 tracking-tight">
+                14 DAYS FREE. NO CREDIT CARD. CANCEL ANYTIME.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-8 mb-10">
+                <button class="bg-primary text-white px-12 py-6 text-2xl font-black uppercase technical-shadow hover:translate-x-1 hover:-translate-y-1 transition-transform">
+                    START INSTALLATION NOW
+                </button>
+                <a href="index.html" class="bg-white text-primary border-4 border-primary px-12 py-6 text-2xl font-black uppercase hover:bg-primary/5 transition-all inline-block">
+                    ← BACK TO HOME
+                </a>
+            </div>
+            <div class="border-t-2 border-dotted border-primary pt-8 flex flex-col md:flex-row justify-between items-center text-[10px] font-black uppercase tracking-[0.3em] text-primary/60">
+                <span>$500/MONTH AFTER TRIAL</span>
+                <span class="text-secondary">CANCEL BEFORE DAY 14 — PAY NOTHING</span>
+                <span>ENGINEERED FOR RELIABILITY</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-16 px-8 border-t-[12px] border-secondary">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12 pb-12 border-b border-white/10">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="text-3xl font-black mb-4 tracking-tighter">AI INSTALLER</div>
+                    <p class="text-white/50 text-xs font-bold uppercase tracking-widest max-w-sm">
+                        The Digital Architect's premier communication protocol. Designed, tested, and verified for industrial-scale reliability in small to medium business environments.
+                    </p>
+                </div>
+                <div class="space-y-4">
+                    <div class="font-black uppercase text-secondary text-sm">Documentation</div>
+                    <ul class="text-xs font-bold space-y-2 uppercase tracking-tight text-white/70">
+                        <li><a class="hover:text-white" href="#">Installation Guide</a></li>
+                        <li><a class="hover:text-white" href="#">System Specs</a></li>
+                        <li><a class="hover:text-white" href="#">API Schema</a></li>
+                        <li><a class="hover:text-white" href="#">User Training</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <div class="font-black uppercase text-secondary text-sm">Compliance</div>
+                    <ul class="text-xs font-bold space-y-2 uppercase tracking-tight text-white/70">
+                        <li><a class="hover:text-white" href="#">Privacy Policy</a></li>
+                        <li><a class="hover:text-white" href="#">Terms of Service</a></li>
+                        <li><a class="hover:text-white" href="#">Data Security</a></li>
+                        <li><a class="hover:text-white" href="#">Support Ticket</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-black uppercase tracking-[0.2em] text-white/30">
+                <div>© 2026 THE DIGITAL ARCHITECT. ALL RIGHTS RESERVED.</div>
+                <div class="flex gap-6">
+                    <span>PROJECT: RECEPTION_MOD_04</span>
+                    <span>STATUS: PRODUCTION_READY</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
