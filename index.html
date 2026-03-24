@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>AI INSTALLER | Technical Circular &amp; Automated Systems</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;family=Work+Sans:wght@700;800;900&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-variant": "#dde3ee",
+              "on-background": "#161c24",
+              "primary-container": "#002366",
+              "on-primary-fixed": "#00174a",
+              "on-tertiary": "#ffffff",
+              "background": "#f8f9ff",
+              "inverse-primary": "#b3c5ff",
+              "surface": "#f8f9ff",
+              "error": "#ba1a1a",
+              "on-secondary-fixed-variant": "#7a3000",
+              "primary": "#00113a",
+              "surface-container-high": "#e3e8f4",
+              "outline": "#757682",
+              "secondary-fixed": "#ffdbcc",
+              "on-surface-variant": "#444650",
+              "surface-container-highest": "#dde3ee",
+              "on-tertiary-container": "#8191a2",
+              "surface-container-low": "#eef4ff",
+              "tertiary-container": "#1a2a37",
+              "surface-dim": "#d5dae5",
+              "surface-tint": "#435b9f",
+              "on-tertiary-fixed-variant": "#394857",
+              "primary-fixed": "#dbe1ff",
+              "tertiary": "#051522",
+              "on-error-container": "#93000a",
+              "on-primary-fixed-variant": "#2a4386",
+              "on-tertiary-fixed": "#0d1d2a",
+              "surface-container-lowest": "#ffffff",
+              "on-primary": "#ffffff",
+              "on-primary-container": "#758dd5",
+              "inverse-surface": "#2b3139",
+              "secondary-container": "#fe6b00",
+              "tertiary-fixed-dim": "#b8c8da",
+              "on-secondary": "#ffffff",
+              "secondary-fixed-dim": "#ffb693",
+              "on-secondary-container": "#572000",
+              "secondary": "#a04100",
+              "on-secondary-fixed": "#351000",
+              "surface-container": "#e9eef9",
+              "on-surface": "#161c24",
+              "inverse-on-surface": "#ecf1fc",
+              "error-container": "#ffdad6",
+              "surface-bright": "#f8f9ff",
+              "on-error": "#ffffff",
+              "outline-variant": "#c5c6d2",
+              "primary-fixed-dim": "#b3c5ff",
+              "tertiary-fixed": "#d4e4f6"
+            },
+            fontFamily: {
+              "headline": ["Work Sans", "sans-serif"],
+              "body": ["Inter", "sans-serif"],
+              "label": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+    <style>
+        .blueprint-grid {
+            background-image: linear-gradient(#00113a08 1px, transparent 1px), linear-gradient(90deg, #00113a08 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 24;
+        }
+        .stamp-badge {
+            transform: rotate(-12deg);
+            border: 4px double currentColor;
+            padding: 4px 12px;
+            font-weight: 900;
+            display: inline-block;
+            text-transform: uppercase;
+        }
+        .tear-off {
+            background-image: radial-gradient(circle, #f8f9ff 2px, transparent 2px);
+            background-size: 16px 16px;
+            background-position: 0 0;
+            background-repeat: repeat-x;
+            height: 8px;
+            width: 100%;
+            margin: 20px 0;
+        }
+        .bold-border {
+            border: 4px solid #00113a;
+        }
+        .technical-shadow {
+            box-shadow: 10px 10px 0px 0px #00113a;
+        }
+    </style>
+</head>
+<body class="bg-[#f0f2f5] font-body text-on-background blueprint-grid">
+    <!-- Technical Header / Masthead -->
+    <nav class="w-full bg-white border-b-[6px] border-primary px-6 py-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex flex-col">
+                <div class="text-4xl font-black text-primary tracking-tighter font-headline leading-none">AI INSTALLER</div>
+                <div class="text-[10px] font-bold tracking-[.3em] text-secondary uppercase mt-1">Industrial Grade Communication Systems</div>
+            </div>
+            <div class="hidden lg:flex items-center space-x-6 text-sm font-black uppercase tracking-tight">
+                <a class="hover:text-secondary border-b-2 border-transparent hover:border-secondary transition-all" href="#">Solutions</a>
+                <a class="hover:text-secondary border-b-2 border-transparent hover:border-secondary transition-all" href="#">Hardware</a>
+                <a class="hover:text-secondary border-b-2 border-transparent hover:border-secondary transition-all" href="#">Pricing</a>
+                <a class="hover:text-secondary border-b-2 border-transparent hover:border-secondary transition-all" href="#">Documentation</a>
+            </div>
+            <div class="flex items-center gap-3">
+                <div class="stamp-badge text-primary border-primary text-xs mr-4 hidden sm:block">EST. 2024</div>
+                <button class="bg-primary text-white px-6 py-3 font-black uppercase text-sm hover:translate-x-1 hover:-translate-y-1 transition-transform technical-shadow">GET STARTED</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero: Circular Style -->
+    <header class="max-w-7xl mx-auto px-6 py-12 md:py-20">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7">
+                <div class="inline-block bg-primary text-white px-4 py-2 font-black text-xs tracking-widest uppercase mb-6 mb-8">
+                    BULLETIN #42-A: SYSTEM STATUS ACTIVE
+                </div>
+                <h1 class="font-headline text-6xl md:text-8xl font-black text-primary leading-[0.85] tracking-tighter mb-8 uppercase">
+                    TURNING <span class="text-secondary">MISSED CALLS</span> INTO REVENUE
+                </h1>
+                <div class="border-l-8 border-primary pl-8 mb-10">
+                    <p class="font-bold text-2xl md:text-3xl text-on-background leading-tight">
+                        IF THIS SYSTEM CAPTURED EVEN 2 OR 3 EXTRA CUSTOMERS PER MONTH, WHAT WOULD THAT BE WORTH TO YOU?
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-6">
+                    <button class="bg-secondary text-white px-8 py-5 text-xl font-black uppercase tracking-tight bold-border technical-shadow hover:translate-x-1 hover:-translate-y-1 transition-transform">
+                        START 14-DAY FREE TRIAL
+                    </button>
+                    <button class="bg-white text-primary px-8 py-5 text-xl font-black uppercase tracking-tight border-4 border-primary hover:bg-primary/5 transition-all flex items-center justify-center gap-2">
+                        <span class="material-symbols-outlined">description</span>
+                        VIEW SPECS
+                    </button>
+                </div>
+            </div>
+            <div class="lg:col-span-5">
+                <div class="relative p-2 bg-white bold-border technical-shadow">
+                    <img alt="Professional Installer" class="w-full aspect-square object-cover grayscale contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4CzTxXBRHssXk7Tx7G5Edo7MRggMIWWgcXz6OBmFwkYk_Qi6cicZoUIaek1Y9tpBsOlj25vKun-wC2_F5WoQY2ysTxfzAUhVmeZ4iGIRXqzAMSuhjZvRVJ9fGHDQxsdMU1oPyh3BAecp6KAkQRJv-NXT1sSGIQlQPQhJCccf7hvD-BOdAK6_AM67RxKxlp06RJ9SzKUCye0IkDETcGSLdC5D5v-plBbv1CO_aHaCxQQIsvDv5LR87ANcM9vw83rx7N2ag47C1Ylf3"/>
+                    <div class="absolute -top-6 -right-6">
+                        <div class="stamp-badge bg-white text-red-600 border-red-600 text-lg py-2 px-6 shadow-lg">
+                            CERTIFIED INSTALLER
+                        </div>
+                    </div>
+                    <div class="mt-4 p-4 border-t-2 border-dotted border-primary flex justify-between items-center bg-surface-container-low">
+                        <span class="font-black text-xs tracking-widest uppercase">Verification Status:</span>
+                        <span class="flex items-center gap-2 font-black text-xs text-green-700">
+                            <span class="w-2 h-2 bg-green-700 rounded-full animate-pulse"></span> IN PROGRESS
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Separation -->
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="border-t-4 border-dotted border-outline-variant my-12 relative">
+            <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#f0f2f5] px-4 font-black text-[10px] tracking-[0.5em] text-outline uppercase">CUT ALONG DOTTED LINE</span>
+        </div>
+    </div>
+
+    <!-- Problem/Solution: Technical Comparison -->
+    <section class="max-w-7xl mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-primary border-4 border-primary technical-shadow">
+            <!-- Left Column: The Problem -->
+            <div class="bg-white p-12 flex flex-col justify-center border-b-4 md:border-b-0 md:border-r-4 border-primary">
+                <h2 class="font-headline text-4xl font-black text-primary leading-none uppercase mb-8">
+                    THE COST OF <br/><span class="text-red-600 underline decoration-4">SILENCE</span>
+                </h2>
+                <p class="font-bold text-lg leading-relaxed text-on-surface-variant mb-6">
+                    Every missed call is a missed quote, a missed appointment, and revenue handed directly to your competitors. Your business doesn't sleep, but your staff has to.
+                </p>
+                <div class="p-6 bg-red-50 border-2 border-red-600 text-red-700 font-black uppercase text-center text-sm">
+                    WARNING: MANUAL OPERATIONS EXPOSE REVENUE VULNERABILITY
+                </div>
+            </div>
+            <!-- Right Column: The Solution -->
+            <div class="bg-primary text-white p-12">
+                <h2 class="font-headline text-4xl font-black leading-none uppercase mb-8">
+                    THE AI <br/><span class="text-secondary italic">OVERRIDE</span>
+                </h2>
+                <div class="space-y-6">
+                    <div class="flex gap-4 items-start border-b border-white/20 pb-4">
+                        <span class="material-symbols-outlined text-secondary text-3xl">check_box</span>
+                        <div>
+                            <p class="font-black uppercase text-lg">Instant 24/7 engagement</p>
+                            <p class="text-white/70 text-sm">No lead left cold, ever.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start border-b border-white/20 pb-4">
+                        <span class="material-symbols-outlined text-secondary text-3xl">check_box</span>
+                        <div>
+                            <p class="font-black uppercase text-lg">Automatic scheduling</p>
+                            <p class="text-white/70 text-sm">Zero human intervention required.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <span class="material-symbols-outlined text-secondary text-3xl">check_box</span>
+                        <div>
+                            <p class="font-black uppercase text-lg">Professional brand voice</p>
+                            <p class="text-white/70 text-sm">Consistency across every single call.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Efficiency: The Stats Section -->
+    <section class="max-w-7xl mx-auto px-6 py-20">
+        <div class="flex flex-col md:flex-row gap-12 items-center">
+            <div class="flex-1 space-y-8">
+                <div class="inline-block px-3 py-1 border-2 border-primary text-primary font-black text-[10px] tracking-widest uppercase">AUDIT REPORT: EFFICIENCY METRICS</div>
+                <h2 class="font-headline text-5xl md:text-6xl font-black text-primary leading-[0.9] uppercase">
+                    SAVE <span class="bg-secondary text-white px-2">$7,000</span> PER YEAR
+                </h2>
+                <p class="text-xl font-bold uppercase tracking-tight text-secondary">Cheaper than hiring an employee</p>
+                <p class="text-lg leading-relaxed font-medium">
+                    Why deal with payroll taxes, benefits, and office space? Our AI system functions with the precision of a master engineer at a fraction of the cost of a junior receptionist. No sick days, no training curves, no drama.
+                </p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-6 bg-white bold-border text-center">
+                        <div class="text-4xl font-black text-primary">$500</div>
+                        <div class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest mt-2">Per Month Maintenance</div>
+                    </div>
+                    <div class="p-6 bg-primary text-white text-center">
+                        <div class="text-4xl font-black">24/7</div>
+                        <div class="text-[10px] font-bold text-white/70 uppercase tracking-widest mt-2">Operational Uptime</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1 w-full">
+                <div class="bg-white p-4 bold-border technical-shadow">
+                    <img alt="Cost Comparison Diagram" class="w-full border-2 border-primary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVWGxqSupGv978yTGY5Ld-NYu_dtxboKDOaPcYK8YwHFiHc0rJy1uzAQ4ZBRQGxyGxvtmAP6ntvNWyGR0MswTcGMkc1GgAcqTlds5BdI2cXYnP8meakqXVd1dthLe9x_9sMoXSL0f1CiKZWxXgNUyurBRI8YcGmj9IKeeaoP5nulgIqlYlKiNnjgm_tgrNdgkrDzXIzhZq5N6hmEeNNorGQRDy6y11Cw-0uqG-_18jSN1ZPkjxZpS_8WSDoj_vw6YnbSLWraXY2xjr"/>
+                    <div class="mt-4 flex justify-between items-center px-2">
+                        <span class="font-black text-xs uppercase tracking-tighter">FIG 1.2: COST AMORTIZATION SCHEDULE</span>
+                        <div class="stamp-badge text-green-700 border-green-700 text-[10px] rotate-6">APPROVED</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works: Blueprint Style -->
+    <section class="bg-primary text-white py-24 relative overflow-hidden">
+        <!-- Blueprint decorative background -->
+        <div class="absolute inset-0 opacity-10 pointer-events-none blueprint-grid" style="background-image: linear-gradient(white 1px, transparent 1px), linear-gradient(90deg, white 1px, transparent 1px); background-size: 30px 30px;"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="font-headline text-5xl md:text-7xl font-black uppercase mb-4 tracking-tighter italic">THE ARCHITECTURE</h2>
+                <div class="w-32 h-2 bg-secondary mx-auto mb-8"></div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1">
+                    <div class="bg-white p-2 border-4 border-secondary shadow-[12px_12px_0px_0px_rgba(254,107,0,1)]">
+                        <img alt="Technical Workflow" class="w-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADtJBDXT0BId2JR_6vwSJB_koXtbRuLzTSSh3IHQyVOxe6GGOOBgf4ZZlhktbW8X72i2PIprgTlwOwHK2_FTX9mRo8WH9enMuIRmXjbleSU2IISV_Q18u4Yu9rrYmQiff5L7doka7ou2K4GIHiV6w_yGzfdf_cjZWmVfvCOG4F4uGfuvhkQh0hFUDxgoWJEaNXGEvKIRdxYKg1R_SSAVeeW_btQ0zZ3MfJuk-nwPoygdgM6aoaTLLWCkB5Wh2h7BDVdRTVckAX4NR5"/>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2 space-y-12">
+                    <div class="flex gap-6 items-start">
+                        <div class="bg-secondary text-white w-12 h-12 flex-shrink-0 flex items-center justify-center font-black text-2xl">01</div>
+                        <div>
+                            <h4 class="font-black text-2xl uppercase tracking-tight mb-2">Hard-Wired Security</h4>
+                            <p class="text-white/70 leading-relaxed font-medium">Encrypted data handling ensuring total privacy for your business calls. No leaks, no backdoors.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6 items-start">
+                        <div class="bg-secondary text-white w-12 h-12 flex-shrink-0 flex items-center justify-center font-black text-2xl">02</div>
+                        <div>
+                            <h4 class="font-black text-2xl uppercase tracking-tight mb-2">Modular Integration</h4>
+                            <p class="text-white/70 leading-relaxed font-medium">Plugs directly into your existing CRM, calendar, and phone lines with military precision.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6 items-start">
+                        <div class="bg-secondary text-white w-12 h-12 flex-shrink-0 flex items-center justify-center font-black text-2xl">03</div>
+                        <div>
+                            <h4 class="font-black text-2xl uppercase tracking-tight mb-2">Auto-Optimization</h4>
+                            <p class="text-white/70 leading-relaxed font-medium">The system learns your business nuances with every customer interaction, refining its protocol.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Demonstration: HUD Style -->
+    <section class="max-w-7xl mx-auto px-6 py-24">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            <div class="lg:col-span-5 space-y-6">
+                <div class="stamp-badge text-secondary border-secondary text-sm mb-4">OFFICIAL DEMO</div>
+                <h2 class="font-headline text-5xl font-black text-primary leading-[0.9] uppercase">EXPERIENCE THE PRECISION</h2>
+                <p class="text-lg font-bold leading-relaxed text-on-surface-variant">
+                    Our AI isn't just a chatbot; it's a structural component of your sales floor. Interact with the prototype to see how it handles complex routing.
+                </p>
+                <div class="p-6 bg-white border-2 border-primary space-y-3 font-mono text-xs">
+                    <div class="flex justify-between border-b border-primary/10 pb-2">
+                        <span class="text-primary font-bold uppercase">Kernel Version</span>
+                        <span class="text-secondary">v4.2.0-STABLE</span>
+                    </div>
+                    <div class="flex justify-between border-b border-primary/10 pb-2">
+                        <span class="text-primary font-bold uppercase">Uptime</span>
+                        <span class="text-green-600">99.98%</span>
+                    </div>
+                    <code class="block text-primary/60 italic mt-4">SYS_LOG: Loading Receptionist_Protocol...</code>
+                    <code class="block text-primary/40">STATUS: Waiting for user input...</code>
+                </div>
+            </div>
+            <div class="lg:col-span-7">
+                <div class="bg-primary p-1 bold-border technical-shadow">
+                    <div class="bg-[#e9eef9] p-4 flex items-center justify-between border-b-4 border-primary">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-primary text-secondary flex items-center justify-center">
+                                <span class="material-symbols-outlined">robot_2</span>
+                            </div>
+                            <div>
+                                <div class="font-black text-primary text-sm uppercase">AI INSTALLER BOT</div>
+                                <div class="text-[9px] font-bold text-primary/60 uppercase">System Diagnostics: Active</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-[400px] overflow-y-auto blueprint-grid bg-white p-6 space-y-6">
+                        <!-- Msg 1 -->
+                        <div class="flex gap-4">
+                            <div class="w-8 h-8 bg-primary/10 flex items-center justify-center shrink-0">
+                                <span class="material-symbols-outlined text-primary text-sm">precision_manufacturing</span>
+                            </div>
+                            <div class="bg-surface-container p-4 font-bold text-sm border-l-4 border-primary">
+                                Hello! I'm your AI Receptionist. How can I assist your business installation today?
+                            </div>
+                        </div>
+                        <!-- Msg 2 -->
+                        <div class="flex flex-row-reverse gap-4">
+                            <div class="w-8 h-8 bg-primary flex items-center justify-center shrink-0">
+                                <span class="material-symbols-outlined text-white text-sm">person</span>
+                            </div>
+                            <div class="bg-primary text-white p-4 font-bold text-sm">
+                                I missed a call from a client earlier. Can you help?
+                            </div>
+                        </div>
+                        <!-- Msg 3 -->
+                        <div class="flex gap-4">
+                            <div class="w-8 h-8 bg-primary/10 flex items-center justify-center shrink-0">
+                                <span class="material-symbols-outlined text-primary text-sm">precision_manufacturing</span>
+                            </div>
+                            <div class="bg-surface-container p-4 font-bold text-sm border-l-4 border-primary">
+                                Understood. I've already messaged them back, identified their project needs, and booked a follow-up for tomorrow at 10 AM. Would you like me to add this to your CRM?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 bg-white border-t-4 border-primary flex gap-2">
+                        <input class="flex-1 bg-surface-container-low border-2 border-primary/20 focus:border-primary px-4 font-bold text-sm uppercase" placeholder="ENTER COMMAND..." type="text"/>
+                        <button class="bg-secondary text-white px-6 py-3 font-black uppercase text-sm">SEND</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA: Direct Mail Coupon Style -->
+    <section class="max-w-7xl mx-auto px-6 pb-24">
+        <div class="bg-white border-[10px] border-primary p-12 text-center relative overflow-hidden">
+            <div class="absolute -top-10 -left-10 w-40 h-40 bg-secondary rotate-45 flex items-end justify-center pb-6">
+                <span class="text-white font-black text-xs uppercase -rotate-45">ACT NOW</span>
+            </div>
+            <h2 class="font-headline text-5xl md:text-7xl font-black text-primary mb-8 uppercase leading-[0.85]">
+                WOULD YOU LIKE TO GO AHEAD AND GET THIS INSTALLED TODAY?
+            </h2>
+            <p class="text-2xl font-black text-secondary uppercase mb-12 tracking-tight">
+                SEE EXACTLY HOW IT WORKS FOR YOUR BUSINESS
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-8 mb-12">
+                <button class="bg-primary text-white px-12 py-6 text-2xl font-black uppercase technical-shadow hover:translate-x-1 hover:-translate-y-1 transition-transform">
+                    START INSTALLATION NOW
+                </button>
+                <button class="bg-white text-primary border-4 border-primary px-12 py-6 text-2xl font-black uppercase hover:bg-primary/5 transition-all">
+                    REQUEST A BLUEPRINT
+                </button>
+            </div>
+            <div class="border-t-2 border-dotted border-primary pt-8 flex flex-col md:flex-row justify-between items-center text-[10px] font-black uppercase tracking-[0.3em] text-primary/60">
+                <span>NO CREDIT CARD REQUIRED FOR TRIAL</span>
+                <span class="text-secondary">LIMITED TIME INDUSTRIAL OFFER</span>
+                <span>ENGINEERED FOR RELIABILITY</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer: Blueprint Table Info -->
+    <footer class="bg-primary text-white py-16 px-8 border-t-[12px] border-secondary">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12 pb-12 border-b border-white/10">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="text-3xl font-black mb-4 tracking-tighter">AI INSTALLER</div>
+                    <p class="text-white/50 text-xs font-bold uppercase tracking-widest max-w-sm">
+                        The Digital Architect's premier communication protocol. Designed, tested, and verified for industrial-scale reliability in small to medium business environments.
+                    </p>
+                </div>
+                <div class="space-y-4">
+                    <div class="font-black uppercase text-secondary text-sm">Documentation</div>
+                    <ul class="text-xs font-bold space-y-2 uppercase tracking-tight text-white/70">
+                        <li><a class="hover:text-white" href="#">Installation Guide</a></li>
+                        <li><a class="hover:text-white" href="#">System Specs</a></li>
+                        <li><a class="hover:text-white" href="#">API Schema</a></li>
+                        <li><a class="hover:text-white" href="#">User Training</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <div class="font-black uppercase text-secondary text-sm">Compliance</div>
+                    <ul class="text-xs font-bold space-y-2 uppercase tracking-tight text-white/70">
+                        <li><a class="hover:text-white" href="#">Privacy Policy</a></li>
+                        <li><a class="hover:text-white" href="#">Terms of Service</a></li>
+                        <li><a class="hover:text-white" href="#">Data Security</a></li>
+                        <li><a class="hover:text-white" href="#">Support Ticket</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-black uppercase tracking-[0.2em] text-white/30">
+                <div>© 2024 THE DIGITAL ARCHITECT. ALL RIGHTS RESERVED.</div>
+                <div class="flex gap-6">
+                    <span>PROJECT: RECEPTION_MOD_04</span>
+                    <span>STATUS: PRODUCTION_READY</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
