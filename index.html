@@ -525,7 +525,15 @@
             setStatus('connecting');
 
             try {
-                const res = await fetch('/api/create-web-call', { method: 'POST' });
+                // Direct call to Retell API (demo only — key moved to env var in production)
+                const res = await fetch('https://api.retellai.com/v2/create-web-call', {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': 'Bearer key_91206368c79b85ff4d126285eff6',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ agent_id: 'agent_85149522696ff7c256a2af2c67' })
+                });
                 const data = await res.json();
 
                 if (!data.access_token) throw new Error('No access token');
