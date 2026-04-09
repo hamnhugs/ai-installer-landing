@@ -1,435 +1,1451 @@
 <!DOCTYPE html>
-<html class="light" lang="en">
+<html class="dark" lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>AI INSTALLER | Technical Circular &amp; Automated Systems</title>
-    <link href="https://fonts.googleapis.com" rel="preconnect"/>
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;family=Work+Sans:wght@700;800;900&amp;display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-
-    <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "surface-variant": "#dde3ee",
-              "on-background": "#161c24",
-              "primary-container": "#002366",
-              "on-primary-fixed": "#00174a",
-              "on-tertiary": "#ffffff",
-              "background": "#f8f9ff",
-              "inverse-primary": "#b3c5ff",
-              "surface": "#f8f9ff",
-              "error": "#ba1a1a",
-              "on-secondary-fixed-variant": "#7a3000",
-              "primary": "#00113a",
-              "surface-container-high": "#e3e8f4",
-              "outline": "#757682",
-              "secondary-fixed": "#ffdbcc",
-              "on-surface-variant": "#444650",
-              "surface-container-highest": "#dde3ee",
-              "on-tertiary-container": "#8191a2",
-              "surface-container-low": "#eef4ff",
-              "tertiary-container": "#1a2a37",
-              "surface-dim": "#d5dae5",
-              "surface-tint": "#435b9f",
-              "on-tertiary-fixed-variant": "#394857",
-              "primary-fixed": "#dbe1ff",
-              "tertiary": "#051522",
-              "on-error-container": "#93000a",
-              "on-primary-fixed-variant": "#2a4386",
-              "on-tertiary-fixed": "#0d1d2a",
-              "surface-container-lowest": "#ffffff",
-              "on-primary": "#ffffff",
-              "on-primary-container": "#758dd5",
-              "inverse-surface": "#2b3139",
-              "secondary-container": "#fe6b00",
-              "tertiary-fixed-dim": "#b8c8da",
-              "on-secondary": "#ffffff",
-              "secondary-fixed-dim": "#ffb693",
-              "on-secondary-container": "#572000",
-              "secondary": "#a04100",
-              "on-secondary-fixed": "#351000",
-              "surface-container": "#e9eef9",
-              "on-surface": "#161c24",
-              "inverse-on-surface": "#ecf1fc",
-              "error-container": "#ffdad6",
-              "surface-bright": "#f8f9ff",
-              "on-error": "#ffffff",
-              "outline-variant": "#c5c6d2",
-              "primary-fixed-dim": "#b3c5ff",
-              "tertiary-fixed": "#d4e4f6"
-            },
-            fontFamily: {
-              "headline": ["Work Sans", "sans-serif"],
-              "body": ["Inter", "sans-serif"],
-              "label": ["Inter", "sans-serif"]
-            },
-            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
-          },
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>INDUSTRIAL INTELLIGENCE | AI Receptionist for the Trades</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "primary-container": "#f97316",
+          "on-primary-container": "#1a0800",
+          "surface-container-lowest": "#0c0e14",
+          "surface-container-low": "#191b22",
+          "surface-container": "#1e1f26",
+          "surface-container-high": "#282a30",
+          "surface-container-highest": "#33343b",
+          "on-surface": "#e2e2eb",
+          "on-surface-variant": "#e0c0b1",
+          "outline": "#a78b7d",
+          "outline-variant": "#584237",
+          "background": "#111319",
+          "surface": "#111319",
+          "primary": "#ffb690",
+          "error": "#ffb4ab",
         },
+        borderRadius: { DEFAULT:"0px", lg:"0px", xl:"0px", full:"9999px" },
+        fontFamily: { headline:["Space Grotesk"], body:["Work Sans"], label:["Work Sans"] }
       }
-    </script>
-    <style>
-        .blueprint-grid {
-            background-image: linear-gradient(#00113a08 1px, transparent 1px), linear-gradient(90deg, #00113a08 1px, transparent 1px);
-            background-size: 20px 20px;
-        }
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 24;
-        }
-        .stamp-badge {
-            transform: rotate(-12deg);
-            border: 4px double currentColor;
-            padding: 4px 12px;
-            font-weight: 900;
-            display: inline-block;
-            text-transform: uppercase;
-        }
-        .tear-off {
-            background-image: radial-gradient(circle, #f8f9ff 2px, transparent 2px);
-            background-size: 16px 16px;
-            background-position: 0 0;
-            background-repeat: repeat-x;
-            height: 8px;
-            width: 100%;
-            margin: 20px 0;
-        }
-        .bold-border {
-            border: 4px solid #00113a;
-        }
-        .technical-shadow {
-            box-shadow: 10px 10px 0px 0px #00113a;
-        }
-    </style>
+    }
+  }
+</script>
+<style>
+  /* ── Icons ── */
+  .material-symbols-outlined { font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24; }
+
+  /* ── Backgrounds ── */
+  .industrial-grid {
+    background-image: radial-gradient(circle, #2a2b33 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  .blueprint-lines {
+    background-image: linear-gradient(#1e1f26 1px, transparent 1px),
+                      linear-gradient(90deg, #1e1f26 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+  .dot-grid {
+    background-image: radial-gradient(circle, rgba(167,139,125,.15) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  /* ── Shadows ── */
+  .hard-shadow { box-shadow: 8px 8px 0px 0px rgba(0,0,0,1); }
+  .orange-shadow { box-shadow: 4px 4px 0px 0px #F97316; }
+
+  /* ── Scroll reveal ── */
+  .reveal { opacity:0; transform:translateY(32px); transition:opacity .6s ease, transform .6s ease; }
+  .reveal.visible { opacity:1; transform:translateY(0); }
+  .reveal-left { opacity:0; transform:translateX(-32px); transition:opacity .6s ease, transform .6s ease; }
+  .reveal-left.visible { opacity:1; transform:translateX(0); }
+  .reveal-right { opacity:0; transform:translateX(32px); transition:opacity .6s ease, transform .6s ease; }
+  .reveal-right.visible { opacity:1; transform:translateX(0); }
+
+  /* ── Animations ── */
+  @keyframes float {
+    0%,100% { transform:translateY(0); }
+    50%      { transform:translateY(-12px); }
+  }
+  @keyframes pulse-ring {
+    0%   { transform:scale(1); opacity:.8; }
+    100% { transform:scale(2.2); opacity:0; }
+  }
+  @keyframes ticker {
+    0%   { transform:translateX(0); }
+    100% { transform:translateX(-50%); }
+  }
+  @keyframes wave-bar {
+    0%,100% { transform:scaleY(.3); }
+    50%      { transform:scaleY(1); }
+  }
+  @keyframes blink-cursor {
+    0%,100% { opacity:1; }
+    50%      { opacity:0; }
+  }
+  @keyframes glow-pulse {
+    0%,100% { box-shadow:0 0 20px rgba(249,115,22,.3); }
+    50%      { box-shadow:0 0 50px rgba(249,115,22,.7); }
+  }
+  @keyframes scan-line {
+    0%   { top:0; }
+    100% { top:100%; }
+  }
+  @keyframes count-up { from { opacity:0; } to { opacity:1; } }
+
+  .float-phone { animation:float 6s ease-in-out infinite; }
+
+  .pulse-btn { position:relative; }
+  .pulse-btn::before, .pulse-btn::after {
+    content:""; position:absolute; inset:0;
+    border:2px solid #F97316;
+    animation:pulse-ring 2s ease-out infinite;
+  }
+  .pulse-btn::after { animation-delay:.5s; }
+
+  .ticker-inner { display:flex; animation:ticker 30s linear infinite; white-space:nowrap; }
+  .ticker-inner:hover { animation-play-state:paused; }
+
+  .wave-bar {
+    width:3px; background:#F97316; transform-origin:bottom;
+    animation:wave-bar 1s ease-in-out infinite;
+  }
+
+  .glow-card { animation:glow-pulse 3s ease-in-out infinite; }
+
+  /* ── Terminal cursor ── */
+  .cursor { display:inline-block; width:8px; height:16px; background:#F97316; animation:blink-cursor 1s infinite; vertical-align:middle; }
+
+  /* ── Scan line on hero image ── */
+  .scan-wrap { position:relative; overflow:hidden; }
+  .scan-line {
+    position:absolute; left:0; width:100%; height:2px;
+    background:linear-gradient(90deg, transparent, rgba(249,115,22,.6), transparent);
+    animation:scan-line 4s linear infinite;
+  }
+
+  /* ── Smooth scroll ── */
+  html { scroll-behavior:smooth; }
+
+  /* ── Nav active ── */
+  .nav-link { position:relative; }
+  .nav-link::after {
+    content:""; position:absolute; bottom:-4px; left:0; width:0; height:2px;
+    background:#F97316; transition:width .3s;
+  }
+  .nav-link:hover::after { width:100%; }
+  .nav-link.active { color:#F97316; }
+  .nav-link.active::after { width:100%; }
+
+  /* ── Form styles ── */
+  .form-input {
+    background:#1e1f26; border:2px solid #584237; color:#e2e2eb;
+    padding:.75rem 1rem; width:100%; font-family:'Work Sans',sans-serif;
+    transition:border-color .2s;
+  }
+  .form-input:focus { outline:none; border-color:#F97316; }
+  .form-input::placeholder { color:#a78b7d; }
+  select.form-input option { background:#1e1f26; }
+
+  /* ── ROI calculator ── */
+  input[type=range] { accent-color:#F97316; }
+
+  /* ── Mobile menu ── */
+  #mobile-menu { display:none; }
+  #mobile-menu.open { display:flex; }
+
+  /* ── Delay utilities ── */
+  .delay-100 { transition-delay:.1s; }
+  .delay-200 { transition-delay:.2s; }
+  .delay-300 { transition-delay:.3s; }
+  .delay-400 { transition-delay:.4s; }
+</style>
 </head>
-<body class="bg-[#f0f2f5] font-body text-on-background blueprint-grid">
-    <!-- Technical Header / Masthead -->
-    <nav class="w-full bg-white border-b-[6px] border-primary px-6 py-4">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-            <div class="flex flex-col">
-                <div class="text-4xl font-black text-primary tracking-tighter font-headline leading-none">AI INSTALLER</div>
-                <div class="text-[10px] font-bold tracking-[.3em] text-secondary uppercase mt-1">Industrial Grade Communication Systems</div>
-            </div>
-            <div class="hidden lg:flex items-center space-x-6 text-sm font-black uppercase tracking-tight">
-                <a class="hover:text-secondary border-b-2 border-transparent hover:border-secondary transition-all" href="#">Solutions</a>
-                <a class="hover:text-secondary border-b-2 border-transparent hover:border-secondary transition-all" href="#">Hardware</a>
-                <a class="hover:text-secondary border-b-2 border-transparent hover:border-secondary transition-all" href="pricing.html">Pricing</a>
-                <a class="hover:text-secondary border-b-2 border-transparent hover:border-secondary transition-all" href="#">Documentation</a>
-            </div>
-            <div class="flex items-center gap-3">
-                <div class="stamp-badge text-primary border-primary text-xs mr-4 hidden sm:block">EST. 2024</div>
-                <a href="form.html" class="bg-primary text-white px-6 py-3 font-black uppercase text-sm hover:translate-x-1 hover:-translate-y-1 transition-transform technical-shadow inline-block">GET STARTED</a>
-            </div>
-        </div>
-    </nav>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container overflow-x-hidden">
 
-    <!-- Hero: Circular Style -->
-    <header class="max-w-7xl mx-auto px-6 py-12 md:py-20">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <div class="lg:col-span-7">
-                <div class="inline-block bg-primary text-white px-4 py-2 font-black text-xs tracking-widest uppercase mb-6 mb-8">
-                    BULLETIN #42-A: SYSTEM STATUS ACTIVE
-                </div>
-                <h1 class="font-headline text-6xl md:text-8xl font-black text-primary leading-[0.85] tracking-tighter mb-8 uppercase">
-                    TURNING <span class="text-secondary">MISSED CALLS</span> INTO REVENUE
-                </h1>
-                <div class="border-l-8 border-primary pl-8 mb-10">
-                    <p class="font-bold text-2xl md:text-3xl text-on-background leading-tight">
-                        IF THIS SYSTEM CAPTURED EVEN 2 OR 3 EXTRA CUSTOMERS PER MONTH, WHAT WOULD THAT BE WORTH TO YOU?
-                    </p>
-                </div>
-                <div class="flex flex-col sm:flex-row gap-6">
-                    <a href="#hear-it-live" class="bg-secondary text-white px-8 py-5 text-xl font-black uppercase tracking-tight bold-border technical-shadow hover:translate-x-1 hover:-translate-y-1 transition-transform flex items-center gap-3">
-                        <span class="material-symbols-outlined">phone</span>
-                        CALL THE DEMO
-                    </a>
-                    <a href="form.html" class="bg-white text-primary px-8 py-5 text-xl font-black uppercase tracking-tight border-4 border-primary hover:bg-primary/5 transition-all flex items-center justify-center gap-2">
-                        <span class="material-symbols-outlined">rocket_launch</span>
-                        START FREE TRIAL
-                    </a>
-                </div>
-                <p class="text-xs font-bold text-primary/50 uppercase tracking-widest mt-4">↓ CALL THE NUMBER. HEAR THE AI ANSWER.</p>
-            </div>
-            <div class="lg:col-span-5">
-                <div class="relative p-2 bg-white bold-border technical-shadow">
-                    <img alt="Professional Installer" class="w-full aspect-square object-cover grayscale contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4CzTxXBRHssXk7Tx7G5Edo7MRggMIWWgcXz6OBmFwkYk_Qi6cicZoUIaek1Y9tpBsOlj25vKun-wC2_F5WoQY2ysTxfzAUhVmeZ4iGIRXqzAMSuhjZvRVJ9fGHDQxsdMU1oPyh3BAecp6KAkQRJv-NXT1sSGIQlQPQhJCccf7hvD-BOdAK6_AM67RxKxlp06RJ9SzKUCye0IkDETcGSLdC5D5v-plBbv1CO_aHaCxQQIsvDv5LR87ANcM9vw83rx7N2ag47C1Ylf3"/>
-                    <div class="absolute -top-6 -right-6">
-                        <div class="stamp-badge bg-white text-red-600 border-red-600 text-lg py-2 px-6 shadow-lg">
-                            CERTIFIED INSTALLER
-                        </div>
-                    </div>
-                    <div class="mt-4 p-4 border-t-2 border-dotted border-primary flex justify-between items-center bg-surface-container-low">
-                        <span class="font-black text-xs tracking-widest uppercase">Verification Status:</span>
-                        <span class="flex items-center gap-2 font-black text-xs text-green-700">
-                            <span class="w-2 h-2 bg-green-700 rounded-full animate-pulse"></span> IN PROGRESS
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+<!-- ═══════════════════════════════════════════════
+     NAV
+════════════════════════════════════════════════ -->
+<nav id="navbar" class="fixed top-0 z-50 w-full bg-[#111319]/95 backdrop-blur-sm border-b-2 border-[#F97316]/20 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-20">
+    <a href="#hero" class="text-xl font-black text-[#F97316] tracking-tighter font-headline uppercase">
+      INDUSTRIAL INTELLIGENCE
+    </a>
+    <!-- Desktop links -->
+    <div class="hidden md:flex gap-8 items-center">
+      <a href="#how-it-works" class="nav-link font-headline text-sm font-bold uppercase tracking-wider text-slate-400 hover:text-white transition-colors">How It Works</a>
+      <a href="#demo" class="nav-link font-headline text-sm font-bold uppercase tracking-wider text-slate-400 hover:text-white transition-colors">Live Demo</a>
+      <a href="#hot-lead" class="nav-link font-headline text-sm font-bold uppercase tracking-wider text-slate-400 hover:text-white transition-colors">Hot Lead</a>
+      <a href="#pricing" class="nav-link font-headline text-sm font-bold uppercase tracking-wider text-slate-400 hover:text-white transition-colors">Pricing</a>
+      <a href="#schedule" class="nav-link font-headline text-sm font-bold uppercase tracking-wider text-slate-400 hover:text-white transition-colors">Free Trial</a>
+    </div>
+    <div class="hidden md:flex items-center gap-4">
+      <button class="font-headline text-sm font-bold uppercase tracking-wider text-slate-400 hover:text-white transition-colors px-4 py-2">LOGIN</button>
+      <a href="#schedule" class="bg-[#F97316] text-[#1a0800] px-6 py-2 font-headline text-sm font-black uppercase tracking-wider border-2 border-[#F97316] hover:bg-transparent hover:text-[#F97316] transition-all duration-200 active:scale-95">
+        START FREE TRIAL
+      </a>
+    </div>
+    <!-- Mobile hamburger -->
+    <button id="hamburger" class="md:hidden text-white" onclick="toggleMenu()">
+      <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+  </div>
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="md:hidden flex-col bg-[#0c0e14] border-t border-[#F97316]/20 px-6 py-6 gap-6">
+    <a href="#how-it-works" onclick="toggleMenu()" class="font-headline text-sm font-bold uppercase tracking-wider text-slate-400 hover:text-[#F97316]">How It Works</a>
+    <a href="#demo"         onclick="toggleMenu()" class="font-headline text-sm font-bold uppercase tracking-wider text-slate-400 hover:text-[#F97316]">Live Demo</a>
+    <a href="#hot-lead"     onclick="toggleMenu()" class="font-headline text-sm font-bold uppercase tracking-wider text-slate-400 hover:text-[#F97316]">Hot Lead Transfer</a>
+    <a href="#pricing"      onclick="toggleMenu()" class="font-headline text-sm font-bold uppercase tracking-wider text-slate-400 hover:text-[#F97316]">Pricing</a>
+    <a href="#schedule"     onclick="toggleMenu()" class="font-headline text-sm font-bold uppercase tracking-wider text-slate-400 hover:text-[#F97316]">Free Trial</a>
+    <a href="#schedule" class="bg-[#F97316] text-[#1a0800] px-6 py-3 font-headline text-sm font-black uppercase tracking-wider text-center">START FREE TRIAL</a>
+  </div>
+</nav>
 
-    <!-- Separation -->
-    <div class="max-w-7xl mx-auto px-6">
-        <div class="border-t-4 border-dotted border-outline-variant my-12 relative">
-            <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#f0f2f5] px-4 font-black text-[10px] tracking-[0.5em] text-outline uppercase">CUT ALONG DOTTED LINE</span>
+<main class="pt-20">
+
+<!-- ═══════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════════ -->
+<section id="hero" class="relative min-h-screen flex items-center overflow-hidden industrial-grid">
+  <!-- Ambient glow -->
+  <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-[#F97316]/5 blur-[120px] pointer-events-none"></div>
+  <div class="absolute bottom-1/4 right-1/4 w-64 h-64 bg-[#3B82F6]/5 blur-[100px] pointer-events-none"></div>
+
+  <div class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-12 gap-12 items-center w-full">
+    <!-- Left copy -->
+    <div class="md:col-span-7 z-10">
+      <div class="reveal inline-block bg-[#F97316] text-[#1a0800] px-3 py-1 text-xs font-black tracking-widest uppercase mb-6">
+        ⚡ AI Receptionist for the Trades — v1.0 Now Live
+      </div>
+      <h1 class="reveal delay-100 font-headline text-5xl md:text-7xl lg:text-8xl font-black leading-none uppercase tracking-tighter mb-6">
+        Never Miss<br/>Another <span class="text-[#F97316]">Job</span><br/>Again.
+      </h1>
+      <p class="reveal delay-200 text-on-surface-variant text-xl md:text-2xl max-w-xl mb-10 leading-relaxed font-light">
+        Precision-built AI voice agents that answer every call, book every appointment, and report back to you — 24/7. Built for plumbers, electricians, HVAC, roofers, and every trade in between.
+      </p>
+      <div class="reveal delay-300 flex flex-col sm:flex-row gap-4">
+        <!-- Pulse CTA -->
+        <a href="#demo" class="pulse-btn relative inline-flex items-center justify-center bg-[#F97316] text-[#1a0800] font-headline font-black text-lg px-10 py-5 border-2 border-[#F97316] hover:bg-transparent hover:text-[#F97316] transition-all uppercase tracking-tight">
+          <span class="material-symbols-outlined mr-2">phone_in_talk</span>
+          Hear It Live
+        </a>
+        <a href="#schedule" class="inline-flex items-center justify-center border-2 border-[#a78b7d] text-on-surface font-headline font-black text-lg px-10 py-5 hover:border-[#F97316] hover:text-[#F97316] transition-all uppercase tracking-tight gap-2">
+          <span class="material-symbols-outlined">calendar_today</span>
+          Start Free Trial
+        </a>
+      </div>
+      <!-- Mini stats row -->
+      <div class="reveal delay-400 flex gap-8 mt-12 pt-10 border-t border-[#584237]">
+        <div>
+          <div class="font-headline font-black text-3xl text-[#F97316]">24/7</div>
+          <div class="text-xs uppercase tracking-widest text-on-surface-variant font-bold mt-1">Always On</div>
         </div>
+        <div>
+          <div class="font-headline font-black text-3xl text-[#F97316]">0.4s</div>
+          <div class="text-xs uppercase tracking-widest text-on-surface-variant font-bold mt-1">Response Time</div>
+        </div>
+        <div>
+          <div class="font-headline font-black text-3xl text-[#F97316]">99.9%</div>
+          <div class="text-xs uppercase tracking-widest text-on-surface-variant font-bold mt-1">Uptime</div>
+        </div>
+        <div>
+          <div class="font-headline font-black text-3xl text-[#F97316]">14</div>
+          <div class="text-xs uppercase tracking-widest text-on-surface-variant font-bold mt-1">Day Free Trial</div>
+        </div>
+      </div>
     </div>
 
-    <!-- Problem/Solution: Technical Comparison -->
-    <section class="max-w-7xl mx-auto px-6 py-12">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-primary border-4 border-primary technical-shadow">
-            <!-- Left Column: The Problem -->
-            <div class="bg-white p-12 flex flex-col justify-center border-b-4 md:border-b-0 md:border-r-4 border-primary">
-                <h2 class="font-headline text-4xl font-black text-primary leading-none uppercase mb-8">
-                    THE COST OF <br/><span class="text-red-600 underline decoration-4">SILENCE</span>
-                </h2>
-                <p class="font-bold text-lg leading-relaxed text-on-surface-variant mb-6">
-                    Every missed call is a missed quote, a missed appointment, and revenue handed directly to your competitors. A full-time receptionist runs <strong class="text-primary">$4,500/month</strong> before taxes, benefits, or training. And they still can't answer at 9 PM on a Tuesday.
-                </p>
-                <div class="p-6 bg-red-50 border-2 border-red-600 text-red-700 font-black uppercase text-center text-sm">
-                    WARNING: 62% OF CALLS TO SERVICE BUSINESSES GO UNANSWERED
-                </div>
+    <!-- Right — phone mockup -->
+    <div class="md:col-span-5 relative flex justify-center">
+      <div class="absolute -top-20 -right-10 w-72 h-72 bg-[#F97316]/8 blur-[100px] pointer-events-none"></div>
+      <div class="float-phone relative w-64 md:w-72">
+        <!-- Phone shell -->
+        <div class="relative border-4 border-[#a78b7d]/40 bg-[#0c0e14] p-2 orange-shadow">
+          <!-- Screen header -->
+          <div class="bg-[#1e1f26] px-4 py-3 flex items-center gap-3 border-b border-[#584237]">
+            <div class="w-2 h-2 rounded-full bg-[#22C55E] animate-pulse"></div>
+            <span class="font-mono text-xs text-[#a78b7d] uppercase tracking-wider">LIVE CALL ACTIVE</span>
+          </div>
+          <!-- Screen body -->
+          <div class="bg-[#111319] p-4 min-h-[340px] font-mono text-xs space-y-3">
+            <div class="text-[#a78b7d]">// Incoming call: (555) 248-1832</div>
+            <div class="text-[#F97316] font-bold">[AI]: "Thanks for calling Mike's Plumbing. This is the virtual assistant. How can I help you today?"</div>
+            <div class="text-on-surface">[CALLER]: "Yeah, I got a busted pipe, need someone out ASAP—"</div>
+            <div class="text-[#F97316] font-bold">[AI]: "I can get a tech out today. What's your address?"</div>
+            <div class="text-on-surface">[CALLER]: "142 Oak Street."</div>
+            <div class="text-[#F97316] font-bold">[AI]: "Got it. We have 2PM available. Want me to lock that in?"</div>
+            <div class="text-on-surface">[CALLER]: "Yeah, perfect."</div>
+            <div class="text-[#F97316] font-bold">[AI]: "Booked. You'll get a confirmation text now. Anything else?"</div>
+            <div class="mt-4 pt-3 border-t border-[#1e1f26] flex items-center gap-2">
+              <span class="text-[#a78b7d]">&gt;</span>
+              <div class="cursor"></div>
             </div>
-            <!-- Right Column: The Solution -->
-            <div class="bg-primary text-white p-12">
-                <h2 class="font-headline text-4xl font-black leading-none uppercase mb-8">
-                    THE AI <br/><span class="text-secondary italic">OVERRIDE</span>
-                </h2>
-                <div class="space-y-6">
-                    <div class="flex gap-4 items-start border-b border-white/20 pb-4">
-                        <span class="material-symbols-outlined text-secondary text-3xl">check_box</span>
-                        <div>
-                            <p class="font-black uppercase text-lg">Answers in under 60 seconds</p>
-                            <p class="text-white/70 text-sm">Every call, every day, including nights and weekends.</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-4 items-start border-b border-white/20 pb-4">
-                        <span class="material-symbols-outlined text-secondary text-3xl">check_box</span>
-                        <div>
-                            <p class="font-black uppercase text-lg">Books the appointment</p>
-                            <p class="text-white/70 text-sm">Qualifies the lead and locks in a time — no human required.</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-4 items-start">
-                        <span class="material-symbols-outlined text-secondary text-3xl">check_box</span>
-                        <div>
-                            <p class="font-black uppercase text-lg">Follows up until they commit</p>
-                            <p class="text-white/70 text-sm">Automated follow-through from first contact to confirmed job.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
+          <!-- Bottom badge -->
+          <div class="absolute -bottom-8 -left-8 bg-[#1e1f26] border-2 border-[#F97316] px-5 py-3 hard-shadow">
+            <div class="text-[#F97316] font-headline font-black text-2xl leading-none">BOOKED</div>
+            <div class="text-on-surface-variant font-label text-[10px] tracking-widest uppercase mt-1">Appointment confirmed</div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
 
-    <!-- Efficiency: The Stats Section -->
-    <section class="max-w-7xl mx-auto px-6 py-20">
-        <div class="flex flex-col md:flex-row gap-12 items-center">
-            <div class="flex-1 space-y-8">
-                <div class="inline-block px-3 py-1 border-2 border-primary text-primary font-black text-[10px] tracking-widest uppercase">AUDIT REPORT: EFFICIENCY METRICS</div>
-                <h2 class="font-headline text-5xl md:text-6xl font-black text-primary leading-[0.9] uppercase">
-                    SAVE <span class="bg-secondary text-white px-2">$48,000</span> PER YEAR
-                </h2>
-                <p class="text-xl font-bold uppercase tracking-tight text-secondary">vs. hiring a full-time receptionist</p>
-                <p class="text-lg leading-relaxed font-medium">
-                    A full-time receptionist costs employers $4,500/month once you factor in salary, payroll taxes, health insurance, retirement, and training. Our AI system runs at <strong>$500/month, all-in</strong> — no HR, no sick days, no turnover. Same professional front line. One-tenth the cost.
-                </p>
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="p-6 bg-white bold-border text-center">
-                        <div class="text-4xl font-black text-primary">$500</div>
-                        <div class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest mt-2">Per Month, All-In</div>
-                    </div>
-                    <div class="p-6 bg-primary text-white text-center">
-                        <div class="text-4xl font-black">24/7</div>
-                        <div class="text-[10px] font-bold text-white/70 uppercase tracking-widest mt-2">Operational Uptime</div>
-                    </div>
-                </div>
-            </div>
-            <div class="flex-1 w-full">
-                <div class="bg-white p-4 bold-border technical-shadow">
-                    <img alt="Cost Comparison Diagram" class="w-full border-2 border-primary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVWGxqSupGv978yTGY5Ld-NYu_dtxboKDOaPcYK8YwHFiHc0rJy1uzAQ4ZBRQGxyGxvtmAP6ntvNWyGR0MswTcGMkc1GgAcqTlds5BdI2cXYnP8meakqXVd1dthLe9x_9sMoXSL0f1CiKZWxXgNUyurBRI8YcGmj9IKeeaoP5nulgIqlYlKiNnjgm_tgrNdgkrDzXIzhZq5N6hmEeNNorGQRDy6y11Cw-0uqG-_18jSN1ZPkjxZpS_8WSDoj_vw6YnbSLWraXY2xjr"/>
-                    <div class="mt-4 flex justify-between items-center px-2">
-                        <span class="font-black text-xs uppercase tracking-tighter">FIG 1.2: COST AMORTIZATION SCHEDULE</span>
-                        <div class="stamp-badge text-green-700 border-green-700 text-[10px] rotate-6">APPROVED</div>
-                    </div>
-                </div>
-            </div>
+  <!-- Bottom border line -->
+  <div class="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#F97316]/50 to-transparent"></div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     ANIMATED STATS COUNTERS
+════════════════════════════════════════════════ -->
+<section class="bg-[#0c0e14] border-y-4 border-[#1e1f26] py-16">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-0">
+      <div class="counter-block p-8 border-r border-[#1e1f26] text-center">
+        <div class="font-headline font-black text-5xl md:text-6xl text-[#F97316] mb-2">
+          <span class="counter" data-target="48291">0</span>
         </div>
-    </section>
-
-    <!-- How It Works: Blueprint Style -->
-    <section class="bg-primary text-white py-24 relative overflow-hidden">
-        <!-- Blueprint decorative background -->
-        <div class="absolute inset-0 opacity-10 pointer-events-none blueprint-grid" style="background-image: linear-gradient(white 1px, transparent 1px), linear-gradient(90deg, white 1px, transparent 1px); background-size: 30px 30px;"></div>
-        <div class="max-w-7xl mx-auto px-6 relative z-10">
-            <div class="text-center mb-16">
-                <h2 class="font-headline text-5xl md:text-7xl font-black uppercase mb-4 tracking-tighter italic">THE ARCHITECTURE</h2>
-                <div class="w-32 h-2 bg-secondary mx-auto mb-8"></div>
-            </div>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                <div class="order-2 lg:order-1">
-                    <div class="bg-white p-2 border-4 border-secondary shadow-[12px_12px_0px_0px_rgba(254,107,0,1)]">
-                        <img alt="Technical Workflow" class="w-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADtJBDXT0BId2JR_6vwSJB_koXtbRuLzTSSh3IHQyVOxe6GGOOBgf4ZZlhktbW8X72i2PIprgTlwOwHK2_FTX9mRo8WH9enMuIRmXjbleSU2IISV_Q18u4Yu9rrYmQiff5L7doka7ou2K4GIHiV6w_yGzfdf_cjZWmVfvCOG4F4uGfuvhkQh0hFUDxgoWJEaNXGEvKIRdxYKg1R_SSAVeeW_btQ0zZ3MfJuk-nwPoygdgM6aoaTLLWCkB5Wh2h7BDVdRTVckAX4NR5"/>
-                    </div>
-                </div>
-                <div class="order-1 lg:order-2 space-y-12">
-                    <div class="flex gap-6 items-start">
-                        <div class="bg-secondary text-white w-12 h-12 flex-shrink-0 flex items-center justify-center font-black text-2xl">01</div>
-                        <div>
-                            <h4 class="font-black text-2xl uppercase tracking-tight mb-2">Answers In Under 60 Seconds</h4>
-                            <p class="text-white/70 leading-relaxed font-medium">Every inbound call is picked up immediately — day, night, weekends, holidays. No voicemail. No missed opportunities. The lead never goes cold.</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-6 items-start">
-                        <div class="bg-secondary text-white w-12 h-12 flex-shrink-0 flex items-center justify-center font-black text-2xl">02</div>
-                        <div>
-                            <h4 class="font-black text-2xl uppercase tracking-tight mb-2">Qualifies &amp; Books The Job</h4>
-                            <p class="text-white/70 leading-relaxed font-medium">The system asks the right questions, determines if the lead is a fit, and books the appointment directly to your calendar. No back-and-forth. No phone tag.</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-6 items-start">
-                        <div class="bg-secondary text-white w-12 h-12 flex-shrink-0 flex items-center justify-center font-black text-2xl">03</div>
-                        <div>
-                            <h4 class="font-black text-2xl uppercase tracking-tight mb-2">Follows Up Automatically</h4>
-                            <p class="text-white/70 leading-relaxed font-medium">If they don't book on the first call, the system follows up. Persistent without being pushy — exactly the way a great salesperson would work it.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="text-xs uppercase tracking-widest text-on-surface-variant font-bold">Calls Answered</div>
+      </div>
+      <div class="counter-block p-8 border-r border-[#1e1f26] text-center">
+        <div class="font-headline font-black text-5xl md:text-6xl text-[#F97316] mb-2">
+          <span class="counter" data-target="12847">0</span>
         </div>
-    </section>
-
-    <!-- CALL TO DEMO -->
-    <section id="hear-it-live" class="bg-primary py-24 px-6">
-        <div class="max-w-5xl mx-auto text-center">
-            <div class="inline-block bg-secondary text-white px-4 py-2 font-black text-xs tracking-widest uppercase mb-6">
-                LIVE DEMO — REAL CALL
-            </div>
-            <h2 class="font-headline text-5xl md:text-7xl font-black text-white leading-[0.85] uppercase mb-6">
-                CALL AND HEAR IT <span class="text-secondary">YOURSELF</span>
-            </h2>
-            <p class="text-white/70 font-bold text-xl max-w-2xl mx-auto mb-12">
-                This number is answered by Aria — the same AI we install for your business. She'll ask what you need, qualify the job, and try to book you in. No humans involved.
-            </p>
-
-            <!-- The Number -->
-            <div class="bg-white border-4 border-secondary inline-block px-12 py-8 mb-8" style="box-shadow: 8px 8px 0 #fe6b00;">
-                <div class="text-xs font-black uppercase tracking-widest text-primary/50 mb-3">CALL THE DEMO NOW — IT'S FREE</div>
-                <a href="tel:+1DEMO" class="font-headline text-5xl md:text-7xl font-black text-secondary tracking-tight" id="demo-number">
-                    NUMBER COMING SOON
-                </a>
-                <div class="text-xs font-bold text-primary/40 uppercase tracking-widest mt-3">Summit Home Services — HVAC Demo Business</div>
-            </div>
-
-            <div class="text-white/50 font-bold text-sm mb-12">Available 24/7 · No wait time · Real AI, not a recording</div>
-
-            <!-- Sample transcript -->
-            <div class="bg-white/10 border-2 border-white/20 p-8 text-left max-w-2xl mx-auto mb-12">
-                <div class="font-black text-secondary uppercase text-xs tracking-widest mb-6">SAMPLE CALL TRANSCRIPT</div>
-                <div class="space-y-4 font-mono text-sm">
-                    <div><span class="text-secondary font-black">ARIA:</span> <span class="text-white/80">Thanks for calling Summit Home Services! This is Aria, how can I help you today?</span></div>
-                    <div><span class="text-white/50 font-black">CALLER:</span> <span class="text-white/60">Yeah my AC stopped working, need someone out today if possible.</span></div>
-                    <div><span class="text-secondary font-black">ARIA:</span> <span class="text-white/80">Got it — AC repair, same-day. What's the address and is this a house or condo?</span></div>
-                    <div><span class="text-white/50 font-black">CALLER:</span> <span class="text-white/60">4821 Maple Drive, it's a house.</span></div>
-                    <div><span class="text-secondary font-black">ARIA:</span> <span class="text-white/80">Perfect. I have a 2 PM slot open today. Can I lock that in for you?</span></div>
-                    <div><span class="text-white/50 font-black">CALLER:</span> <span class="text-white/60">Yeah 2 PM works.</span></div>
-                    <div><span class="text-secondary font-black">ARIA:</span> <span class="text-white/80">Done! You're confirmed for 2 PM at 4821 Maple Drive. You'll get a text in the next 2 minutes. Anything else I can help with?</span></div>
-                </div>
-            </div>
-
-            <!-- Stats -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl mx-auto mb-12">
-                <div class="bg-white/10 border-2 border-white/20 p-6">
-                    <div class="font-black text-secondary text-3xl mb-1">90 sec</div>
-                    <div class="font-bold text-white/60 uppercase text-xs tracking-widest">Setup time per business</div>
-                </div>
-                <div class="bg-white/10 border-2 border-white/20 p-6">
-                    <div class="font-black text-secondary text-3xl mb-1">24/7</div>
-                    <div class="font-bold text-white/60 uppercase text-xs tracking-widest">Never misses a call</div>
-                </div>
-                <div class="bg-white/10 border-2 border-white/20 p-6">
-                    <div class="font-black text-secondary text-3xl mb-1">$500/mo</div>
-                    <div class="font-bold text-white/60 uppercase text-xs tracking-widest">vs $4,516/mo human receptionist</div>
-                </div>
-            </div>
-
-            <a href="form.html" class="inline-block bg-secondary text-white px-12 py-5 text-xl font-black uppercase border-4 border-white hover:translate-x-1 hover:-translate-y-1 transition-transform" style="box-shadow: 6px 6px 0 #fe6b00;">
-                GET THIS FOR MY BUSINESS — FREE 14-DAY TRIAL
-            </a>
+        <div class="text-xs uppercase tracking-widest text-on-surface-variant font-bold">Jobs Booked</div>
+      </div>
+      <div class="counter-block p-8 border-r border-[#1e1f26] text-center">
+        <div class="font-headline font-black text-5xl md:text-6xl text-white mb-2">
+          $<span class="counter" data-target="4200000" data-format="compact">0</span>
         </div>
-    </section>
-
-        <!-- Final CTA: Direct Mail Coupon Style -->
-    <section class="max-w-7xl mx-auto px-6 pb-24">
-        <div class="bg-white border-[10px] border-primary p-12 text-center relative overflow-hidden">
-            <div class="absolute -top-10 -left-10 w-40 h-40 bg-secondary rotate-45 flex items-end justify-center pb-6">
-                <span class="text-white font-black text-xs uppercase -rotate-45">ACT NOW</span>
-            </div>
-            <h2 class="font-headline text-5xl md:text-7xl font-black text-primary mb-8 uppercase leading-[0.85]">
-                WOULD YOU LIKE TO GO AHEAD AND GET THIS INSTALLED TODAY?
-            </h2>
-            <p class="text-2xl font-black text-secondary uppercase mb-12 tracking-tight">
-                SEE EXACTLY HOW IT WORKS FOR YOUR BUSINESS — FREE FOR 14 DAYS
-            </p>
-            <div class="flex flex-col md:flex-row justify-center gap-8 mb-12">
-                <a href="form.html" class="bg-primary text-white px-12 py-6 text-2xl font-black uppercase technical-shadow hover:translate-x-1 hover:-translate-y-1 transition-transform inline-block">
-                    START INSTALLATION NOW
-                </a>
-                <a href="pricing.html" class="bg-white text-primary border-4 border-primary px-12 py-6 text-2xl font-black uppercase hover:bg-primary/5 transition-all inline-block">
-                    SEE FULL PRICING
-                </a>
-            </div>
-            <div class="border-t-2 border-dotted border-primary pt-8 flex flex-col md:flex-row justify-between items-center text-[10px] font-black uppercase tracking-[0.3em] text-primary/60">
-                <span>NO CREDIT CARD REQUIRED FOR TRIAL</span>
-                <span class="text-secondary">$500/MONTH AFTER TRIAL — CANCEL ANYTIME</span>
-                <span>ENGINEERED FOR RELIABILITY</span>
-            </div>
+        <div class="text-xs uppercase tracking-widest text-on-surface-variant font-bold">Revenue Recovered</div>
+      </div>
+      <div class="counter-block p-8 text-center">
+        <div class="font-headline font-black text-5xl md:text-6xl text-[#F97316] mb-2">
+          <span class="counter" data-target="347">0</span>
         </div>
-    </section>
+        <div class="text-xs uppercase tracking-widest text-on-surface-variant font-bold">Active Clients</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Footer: Blueprint Table Info -->
-    <footer class="bg-primary text-white py-16 px-8 border-t-[12px] border-secondary">
-        <div class="max-w-7xl mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12 pb-12 border-b border-white/10">
-                <div class="col-span-1 md:col-span-2">
-                    <div class="text-3xl font-black mb-4 tracking-tighter">AI INSTALLER</div>
-                    <p class="text-white/50 text-xs font-bold uppercase tracking-widest max-w-sm">
-                        The Digital Architect's premier communication protocol. Designed, tested, and verified for industrial-scale reliability in small to medium business environments.
-                    </p>
-                </div>
-                <div class="space-y-4">
-                    <div class="font-black uppercase text-secondary text-sm">Documentation</div>
-                    <ul class="text-xs font-bold space-y-2 uppercase tracking-tight text-white/70">
-                        <li><a class="hover:text-white" href="#">Installation Guide</a></li>
-                        <li><a class="hover:text-white" href="#">System Specs</a></li>
-                        <li><a class="hover:text-white" href="#">API Schema</a></li>
-                        <li><a class="hover:text-white" href="#">User Training</a></li>
-                    </ul>
-                </div>
-                <div class="space-y-4">
-                    <div class="font-black uppercase text-secondary text-sm">Compliance</div>
-                    <ul class="text-xs font-bold space-y-2 uppercase tracking-tight text-white/70">
-                        <li><a class="hover:text-white" href="#">Privacy Policy</a></li>
-                        <li><a class="hover:text-white" href="#">Terms of Service</a></li>
-                        <li><a class="hover:text-white" href="#">Data Security</a></li>
-                        <li><a class="hover:text-white" href="#">Support Ticket</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-black uppercase tracking-[0.2em] text-white/30">
-                <div>© 2026 THE DIGITAL ARCHITECT. ALL RIGHTS RESERVED.</div>
-                <div class="flex gap-6">
-                    <span>PROJECT: RECEPTION_MOD_04</span>
-                    <span>STATUS: PRODUCTION_READY</span>
-                </div>
-            </div>
+<!-- ═══════════════════════════════════════════════
+     TICKER — WHO WE SERVE
+════════════════════════════════════════════════ -->
+<div class="bg-[#F97316] py-3 overflow-hidden border-y-2 border-[#1a0800]">
+  <div class="ticker-inner gap-12">
+    <!-- Repeated twice for seamless loop -->
+    <span class="font-headline font-black text-sm uppercase tracking-widest text-[#1a0800] px-8">⚙ Plumbers</span>
+    <span class="font-headline font-black text-sm uppercase tracking-widest text-[#1a0800] px-8">⚡ Electricians</span>
+    <span class="font-headline font-black text-sm uppercase tracking-widest text-[#1a0800] px-8">🔥 HVAC Techs</span>
+    <span class="font-headline font-black text-sm uppercase tracking-widest text-[#1a0800] px-8">🏠 Roofers</span>
+    <span class="font-headline font-black text-sm uppercase tracking-widest text-[#1a0800] px-8">🪟 Window Installers</span>
+    <span class="font-headline font-black text-sm uppercase tracking-widest text-[#1a0800] px-8">🌿 Landscapers</span>
+    <span class="font-headline font-black text-sm uppercase tracking-widest text-[#1a0800] px-8">🎨 Painters</span>
+    <span class="font-headline font-black text-sm uppercase tracking-widest text-[#1a0800] px-8">🚰 Septic Services</span>
+    <span class="font-headline font-black text-sm uppercase tracking-widest text-[#1a0800] px-8">🧱 General Contractors</span>
+    <span class="font-headline font-black text-sm uppercase tracking-widest text-[#1a0800] px-8">⚙ Plumbers</span>
+    <span class="font-headline font-black text-sm uppercase tracking-widest text-[#1a0800] px-8">⚡ Electricians</span>
+    <span class="font-headline font-black text-sm uppercase tracking-widest text-[#1a0800] px-8">🔥 HVAC Techs</span>
+    <span class="font-headline font-black text-sm uppercase tracking-widest text-[#1a0800] px-8">🏠 Roofers</span>
+    <span class="font-headline font-black text-sm uppercase tracking-widest text-[#1a0800] px-8">🪟 Window Installers</span>
+    <span class="font-headline font-black text-sm uppercase tracking-widest text-[#1a0800] px-8">🌿 Landscapers</span>
+    <span class="font-headline font-black text-sm uppercase tracking-widest text-[#1a0800] px-8">🎨 Painters</span>
+    <span class="font-headline font-black text-sm uppercase tracking-widest text-[#1a0800] px-8">🚰 Septic Services</span>
+    <span class="font-headline font-black text-sm uppercase tracking-widest text-[#1a0800] px-8">🧱 General Contractors</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     PAIN SECTION — COST OF SILENCE
+════════════════════════════════════════════════ -->
+<section class="bg-[#0c0e14] py-24 border-b-4 border-[#1e1f26]">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 gap-0">
+      <!-- Left — The Problem -->
+      <div class="p-12 border-2 border-l-4 border-[#ffb4ab] bg-[#111319] space-y-8 reveal-left">
+        <div class="flex items-center gap-4">
+          <span class="material-symbols-outlined text-[#ffb4ab] text-4xl">warning</span>
+          <h2 class="font-headline text-3xl font-black uppercase">The Cost of Silence</h2>
         </div>
-    </footer>
+        <ul class="space-y-6">
+          <li class="flex items-start gap-4">
+            <span class="text-[#ffb4ab] font-headline font-bold text-lg">01</span>
+            <div>
+              <div class="font-bold uppercase tracking-tight mb-1">64% of calls go to voicemail</div>
+              <p class="text-on-surface-variant text-sm">While you're on a job, your phone rings. Customer hangs up. Calls your competitor. That's it.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="text-[#ffb4ab] font-headline font-bold text-lg">02</span>
+            <div>
+              <div class="font-bold uppercase tracking-tight mb-1">85% never call back</div>
+              <p class="text-on-surface-variant text-sm">If someone reaches voicemail, 85% won't leave a message — and they won't try again.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="text-[#ffb4ab] font-headline font-bold text-lg">03</span>
+            <div>
+              <div class="font-bold uppercase tracking-tight mb-1">$250–$1,500 per missed call</div>
+              <p class="text-on-surface-variant text-sm">Average lifetime value of a trade service customer. Every missed call is cash walking out the door.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- Right — The Fix -->
+      <div class="p-12 border-2 border-l-4 border-[#F97316] bg-[#1e1f26] space-y-8 reveal-right">
+        <div class="flex items-center gap-4">
+          <span class="material-symbols-outlined text-[#F97316] text-4xl">bolt</span>
+          <h2 class="font-headline text-3xl font-black uppercase">The AI Override</h2>
+        </div>
+        <ul class="space-y-6">
+          <li class="flex items-start gap-4">
+            <span class="text-[#F97316] font-headline font-bold text-lg">01</span>
+            <div>
+              <div class="font-bold uppercase tracking-tight mb-1 text-white">Answers in 0.4 seconds</div>
+              <p class="text-on-surface-variant text-sm">Every call, every time — whether you're on a roof, under a sink, or at 2am on a Sunday.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="text-[#F97316] font-headline font-bold text-lg">02</span>
+            <div>
+              <div class="font-bold uppercase tracking-tight mb-1 text-white">Books the appointment live</div>
+              <p class="text-on-surface-variant text-sm">Your AI checks your calendar and locks in a time slot during the call. No callbacks needed.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="text-[#F97316] font-headline font-bold text-lg">03</span>
+            <div>
+              <div class="font-bold uppercase tracking-tight mb-1 text-white">Reports back daily</div>
+              <p class="text-on-surface-variant text-sm">Daily text + weekly email recap. Who called, what they needed, what got booked. No login required.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     HOW IT WORKS
+════════════════════════════════════════════════ -->
+<section id="how-it-works" class="py-24 blueprint-lines relative">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16 reveal">
+      <span class="text-[#F97316] font-headline text-sm font-bold uppercase tracking-widest block mb-4">SYSTEM ARCHITECTURE</span>
+      <h2 class="font-headline text-5xl md:text-6xl font-black uppercase leading-none">How It Works</h2>
+    </div>
+
+    <!-- Steps -->
+    <div class="grid md:grid-cols-3 gap-1 relative">
+      <!-- Connector line (desktop) -->
+      <div class="hidden md:block absolute top-16 left-[16%] right-[16%] h-px border-t-2 border-dashed border-[#584237] z-0"></div>
+
+      <!-- Step 1 -->
+      <div class="reveal bg-[#111319] border-2 border-[#584237] hover:border-[#F97316] transition-colors p-10 group z-10">
+        <div class="flex justify-between items-start mb-8">
+          <div class="w-12 h-12 border-2 border-[#F97316] flex items-center justify-center group-hover:bg-[#F97316] transition-colors">
+            <span class="material-symbols-outlined text-[#F97316] group-hover:text-[#1a0800] transition-colors">call</span>
+          </div>
+          <span class="font-mono text-[10px] text-[#a78b7d] opacity-50">STEP_01</span>
+        </div>
+        <h3 class="font-headline text-2xl font-bold uppercase mb-4">We Install Your Agent</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed">We configure your AI receptionist with your business name, services, hours, and FAQs. Takes 24–48 hours. You forward your business line to a new number — done.</p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="reveal delay-200 bg-[#111319] border-2 border-[#584237] hover:border-[#F97316] transition-colors p-10 group z-10">
+        <div class="flex justify-between items-start mb-8">
+          <div class="w-12 h-12 border-2 border-[#F97316] flex items-center justify-center group-hover:bg-[#F97316] transition-colors">
+            <span class="material-symbols-outlined text-[#F97316] group-hover:text-[#1a0800] transition-colors">support_agent</span>
+          </div>
+          <span class="font-mono text-[10px] text-[#a78b7d] opacity-50">STEP_02</span>
+        </div>
+        <h3 class="font-headline text-2xl font-bold uppercase mb-4">AI Answers Every Call</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Your AI picks up in under a second, sounds natural and professional, asks the right questions, and handles the conversation exactly the way you'd want it to.</p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="reveal delay-400 bg-[#111319] border-2 border-[#584237] hover:border-[#F97316] transition-colors p-10 group z-10">
+        <div class="flex justify-between items-start mb-8">
+          <div class="w-12 h-12 border-2 border-[#F97316] flex items-center justify-center group-hover:bg-[#F97316] transition-colors">
+            <span class="material-symbols-outlined text-[#F97316] group-hover:text-[#1a0800] transition-colors">calendar_month</span>
+          </div>
+          <span class="font-mono text-[10px] text-[#a78b7d] opacity-50">STEP_03</span>
+        </div>
+        <h3 class="font-headline text-2xl font-bold uppercase mb-4">Books &amp; Reports Back</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Appointments go straight into your calendar. You get a text each evening with a full summary — who called, what they needed, what got booked. No dashboards. No logins.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     LIVE DEMO SECTION
+════════════════════════════════════════════════ -->
+<section id="demo" class="py-24 bg-[#0c0e14]">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="bg-[#0c0e14] border-2 border-[#F97316]/30 glow-card overflow-hidden">
+      <div class="grid md:grid-cols-2">
+
+        <!-- Left — demo controls -->
+        <div class="p-12 md:p-16 border-r-2 border-[#1e1f26]">
+          <div class="flex items-center gap-3 mb-8">
+            <div class="w-3 h-3 bg-[#22C55E] rounded-full animate-pulse"></div>
+            <div class="w-3 h-3 bg-[#EAB308] rounded-full"></div>
+            <div class="w-3 h-3 bg-[#EF4444] rounded-full"></div>
+            <span class="font-mono text-xs text-[#a78b7d] uppercase tracking-widest ml-2">LIVE TERMINAL // DEMO_MODE</span>
+          </div>
+
+          <h2 class="font-headline text-4xl md:text-5xl font-black uppercase mb-6 leading-tight reveal-left">
+            Talk to Your<br/><span class="text-[#F97316]">AI Receptionist</span><br/>Right Now
+          </h2>
+          <p class="text-on-surface-variant mb-8 leading-relaxed reveal-left delay-100">
+            Click the button below and your browser mic will connect you to a live AI receptionist — same technology your clients will use. Ask it anything a customer would ask a plumber or electrician.
+          </p>
+
+          <!-- Waveform display -->
+          <div id="waveform" class="flex items-end gap-1 h-16 mb-8 opacity-30" aria-hidden="true">
+            <div class="wave-bar h-full" style="animation-delay:0s"></div>
+            <div class="wave-bar h-full" style="animation-delay:.1s"></div>
+            <div class="wave-bar h-full" style="animation-delay:.2s"></div>
+            <div class="wave-bar h-full" style="animation-delay:.3s"></div>
+            <div class="wave-bar h-full" style="animation-delay:.15s"></div>
+            <div class="wave-bar h-full" style="animation-delay:.25s"></div>
+            <div class="wave-bar h-full" style="animation-delay:.05s"></div>
+            <div class="wave-bar h-full" style="animation-delay:.35s"></div>
+            <div class="wave-bar h-full" style="animation-delay:.4s"></div>
+            <div class="wave-bar h-full" style="animation-delay:.12s"></div>
+            <div class="wave-bar h-full" style="animation-delay:.22s"></div>
+            <div class="wave-bar h-full" style="animation-delay:.32s"></div>
+            <div class="wave-bar h-full" style="animation-delay:.08s"></div>
+            <div class="wave-bar h-full" style="animation-delay:.18s"></div>
+            <div class="wave-bar h-full" style="animation-delay:.28s"></div>
+            <div class="wave-bar h-full" style="animation-delay:.38s"></div>
+          </div>
+
+          <!-- The actual Retell web widget goes here.
+               Replace the placeholder below with your Retell agent embed code:
+               <retell-widget agent-id="YOUR_AGENT_ID"></retell-widget>
+               <script src="https://retellai.com/dist/retell-web-client.js"></script>
+          -->
+          <button id="demo-btn"
+            onclick="activateDemo()"
+            class="pulse-btn w-full bg-[#F97316] text-[#1a0800] font-headline font-black text-xl py-5 uppercase tracking-wider hover:bg-transparent hover:text-[#F97316] border-2 border-[#F97316] transition-all active:scale-95 flex items-center justify-center gap-3">
+            <span class="material-symbols-outlined text-2xl">mic</span>
+            Start Live Demo Call
+          </button>
+          <p class="text-xs text-on-surface-variant uppercase tracking-widest text-center mt-4">No signup required · Uses your browser microphone</p>
+        </div>
+
+        <!-- Right — terminal transcript -->
+        <div class="relative min-h-[480px] bg-[#0c0e14] overflow-hidden scan-wrap">
+          <div class="scan-line"></div>
+          <!-- Transcript window -->
+          <div class="p-8 h-full flex flex-col">
+            <div class="font-mono text-[10px] text-[#a78b7d] uppercase tracking-widest mb-6">CALL_TRANSCRIPT // SAMPLE_04</div>
+            <div id="transcript" class="flex-1 space-y-4 font-mono text-sm overflow-y-auto">
+              <div class="flex gap-3 text-[#a78b7d]">
+                <span>[08:47:03]</span>
+                <span>Incoming call: +1 (813) 555-0142</span>
+              </div>
+              <div class="flex gap-3">
+                <span class="text-[#F97316] font-bold shrink-0">[AI]:</span>
+                <span class="text-on-surface">"Thank you for calling Mike's Plumbing. This is the virtual assistant — how can I help you today?"</span>
+              </div>
+              <div class="flex gap-3">
+                <span class="text-[#93ccff] font-bold shrink-0">[CALLER]:</span>
+                <span class="text-on-surface">"Hey yeah, my hot water heater's making a popping sound and I'm not getting hot water."</span>
+              </div>
+              <div class="flex gap-3">
+                <span class="text-[#F97316] font-bold shrink-0">[AI]:</span>
+                <span class="text-on-surface">"Sounds like sediment buildup — that's something we can get fixed today. Are you in the service area? What's your zip code?"</span>
+              </div>
+              <div class="flex gap-3">
+                <span class="text-[#93ccff] font-bold shrink-0">[CALLER]:</span>
+                <span class="text-on-surface">"33602."</span>
+              </div>
+              <div class="flex gap-3">
+                <span class="text-[#F97316] font-bold shrink-0">[AI]:</span>
+                <span class="text-on-surface">"Perfect, you're in our zone. We have a slot at 1:30 this afternoon or 9am tomorrow — which works better?"</span>
+              </div>
+              <div class="flex gap-3">
+                <span class="text-[#93ccff] font-bold shrink-0">[CALLER]:</span>
+                <span class="text-on-surface">"1:30 today."</span>
+              </div>
+              <div class="flex gap-3">
+                <span class="text-[#F97316] font-bold shrink-0">[AI]:</span>
+                <span class="text-on-surface">"Done. I've booked you for 1:30pm. You'll get a text confirmation in about 30 seconds. Anything else I can help with?"</span>
+              </div>
+              <div class="flex gap-3 text-[#22C55E]">
+                <span>[RESULT]:</span>
+                <span class="font-bold">Appointment booked ✓ — Calendar updated ✓ — SMS sent ✓</span>
+              </div>
+            </div>
+            <!-- Bottom badge -->
+            <div class="mt-6 pt-4 border-t border-[#1e1f26] flex items-center justify-between">
+              <span class="font-mono text-[10px] text-[#a78b7d] uppercase">Call duration: 00:47</span>
+              <span class="bg-[#F97316] text-[#1a0800] px-3 py-1 font-headline font-black text-[10px] uppercase tracking-widest">JOB BOOKED</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     ROI CALCULATOR
+════════════════════════════════════════════════ -->
+<section class="py-24 bg-[#111319] border-y-4 border-[#1e1f26]">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16 reveal">
+      <span class="text-[#F97316] font-headline text-sm font-bold uppercase tracking-widest block mb-4">ROI PROJECTION ENGINE</span>
+      <h2 class="font-headline text-5xl md:text-6xl font-black uppercase">Calculate Your Recovery</h2>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8 items-start">
+      <!-- Sliders -->
+      <div class="bg-[#1e1f26] border-2 border-[#584237] p-10 reveal-left space-y-10">
+        <div>
+          <div class="flex justify-between items-end mb-3">
+            <label class="font-headline text-sm font-bold uppercase tracking-wider">Missed Calls Per Week</label>
+            <span class="font-headline font-black text-[#F97316] text-2xl" id="missed-val">8</span>
+          </div>
+          <input type="range" min="1" max="50" value="8" id="missed-calls" class="w-full" oninput="updateROI()"/>
+          <div class="flex justify-between text-xs text-[#a78b7d] mt-1 uppercase"><span>1</span><span>50</span></div>
+        </div>
+        <div>
+          <div class="flex justify-between items-end mb-3">
+            <label class="font-headline text-sm font-bold uppercase tracking-wider">Average Job Value</label>
+            <span class="font-headline font-black text-[#F97316] text-2xl">$<span id="job-val">450</span></span>
+          </div>
+          <input type="range" min="100" max="5000" step="50" value="450" id="job-value" class="w-full" oninput="updateROI()"/>
+          <div class="flex justify-between text-xs text-[#a78b7d] mt-1 uppercase"><span>$100</span><span>$5,000</span></div>
+        </div>
+        <div>
+          <div class="flex justify-between items-end mb-3">
+            <label class="font-headline text-sm font-bold uppercase tracking-wider">Booking Rate Improvement</label>
+            <span class="font-headline font-black text-[#F97316] text-2xl"><span id="rate-val">70</span>%</span>
+          </div>
+          <input type="range" min="30" max="95" value="70" id="booking-rate" class="w-full" oninput="updateROI()"/>
+          <div class="flex justify-between text-xs text-[#a78b7d] mt-1 uppercase"><span>30%</span><span>95%</span></div>
+        </div>
+      </div>
+
+      <!-- Results -->
+      <div class="bg-[#0c0e14] border-2 border-[#F97316] p-10 reveal-right relative overflow-hidden">
+        <div class="absolute top-4 right-4 text-[#F97316]/10 font-headline font-black text-8xl uppercase select-none pointer-events-none">ROI</div>
+        <div class="text-[#F97316] font-headline text-xs font-bold uppercase tracking-widest mb-8">YOUR MONTHLY RECOVERY</div>
+        <div class="font-headline font-black text-7xl text-white mb-2">$<span id="monthly-recovery">10,080</span></div>
+        <div class="text-on-surface-variant text-xs uppercase tracking-widest mb-10">Additional revenue per month</div>
+        <div class="space-y-4 mb-10">
+          <div class="flex justify-between border-b border-[#1e1f26] pb-3">
+            <span class="text-xs uppercase font-bold text-on-surface-variant">Monthly Cost</span>
+            <span class="font-headline font-bold text-lg">$247</span>
+          </div>
+          <div class="flex justify-between border-b border-[#F97316] pb-3">
+            <span class="text-xs uppercase font-bold text-[#F97316]">Your Net Monthly Gain</span>
+            <span class="font-headline font-black text-2xl text-[#F97316]">$<span id="net-gain">9,833</span></span>
+          </div>
+          <div class="flex justify-between pb-3">
+            <span class="text-xs uppercase font-bold text-on-surface-variant">Annual Gain</span>
+            <span class="font-headline font-black text-2xl text-white">$<span id="annual-gain">117,996</span></span>
+          </div>
+        </div>
+        <a href="#schedule" class="block w-full bg-[#F97316] text-[#1a0800] font-headline font-black py-4 uppercase tracking-widest text-center hover:brightness-110 transition-all">
+          Start Recovering This Revenue →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     FEATURE GRID
+════════════════════════════════════════════════ -->
+<section class="py-24 bg-[#0c0e14]">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16 reveal">
+      <span class="text-[#F97316] font-headline text-sm font-bold uppercase tracking-widest block mb-4">TECHNICAL SPECIFICATIONS</span>
+      <h2 class="font-headline text-5xl md:text-6xl font-black uppercase">The AI Installer Advantage</h2>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-1">
+      <div class="reveal bg-[#111319] border-2 border-[#584237] hover:border-[#F97316] transition-colors p-8 group">
+        <div class="w-12 h-12 bg-[#F97316] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+          <span class="material-symbols-outlined text-[#1a0800]">phone_in_talk</span>
+        </div>
+        <h4 class="font-headline font-bold text-lg uppercase mb-3">Answers Every Call</h4>
+        <p class="text-on-surface-variant text-sm leading-relaxed">No voicemail. No hold music. Your AI picks up in under half a second, 24 hours a day, 365 days a year.</p>
+      </div>
+      <div class="reveal delay-100 bg-[#111319] border-2 border-[#584237] hover:border-[#F97316] transition-colors p-8 group">
+        <div class="w-12 h-12 bg-[#F97316] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+          <span class="material-symbols-outlined text-[#1a0800]">calendar_month</span>
+        </div>
+        <h4 class="font-headline font-bold text-lg uppercase mb-3">Books Appointments</h4>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Checks your live calendar and locks in a time slot during the call. Customer gets an instant SMS confirmation.</p>
+      </div>
+      <div class="reveal delay-200 bg-[#111319] border-2 border-[#584237] hover:border-[#F97316] transition-colors p-8 group">
+        <div class="w-12 h-12 bg-[#F97316] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+          <span class="material-symbols-outlined text-[#1a0800]">sms</span>
+        </div>
+        <h4 class="font-headline font-bold text-lg uppercase mb-3">Daily Text Reports</h4>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Every evening: a text with your call summary. Who called, what they needed, what got booked. No apps. No logins.</p>
+      </div>
+      <div class="reveal delay-300 bg-[#111319] border-2 border-[#584237] hover:border-[#F97316] transition-colors p-8 group">
+        <div class="w-12 h-12 bg-[#F97316] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+          <span class="material-symbols-outlined text-[#1a0800]">phone_forwarded</span>
+        </div>
+        <h4 class="font-headline font-bold text-lg uppercase mb-3">Hot Lead Transfer</h4>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Big job on the line? AI detects high-value callers and transfers the call directly to your cell — live, in real time.</p>
+      </div>
+      <div class="reveal bg-[#111319] border-2 border-[#584237] hover:border-[#F97316] transition-colors p-8 group">
+        <div class="w-12 h-12 bg-[#F97316] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+          <span class="material-symbols-outlined text-[#1a0800]">record_voice_over</span>
+        </div>
+        <h4 class="font-headline font-bold text-lg uppercase mb-3">Sounds Human</h4>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Sub-600ms response time. Natural conversation. Most callers can't tell it's an AI — and that's the point.</p>
+      </div>
+      <div class="reveal delay-100 bg-[#111319] border-2 border-[#584237] hover:border-[#F97316] transition-colors p-8 group">
+        <div class="w-12 h-12 bg-[#F97316] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+          <span class="material-symbols-outlined text-[#1a0800]">hub</span>
+        </div>
+        <h4 class="font-headline font-bold text-lg uppercase mb-3">Fully Customized</h4>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Your business name, your services, your pricing, your service area. The AI speaks your language, not generic scripts.</p>
+      </div>
+      <div class="reveal delay-200 bg-[#111319] border-2 border-[#584237] hover:border-[#F97316] transition-colors p-8 group">
+        <div class="w-12 h-12 bg-[#F97316] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+          <span class="material-symbols-outlined text-[#1a0800]">verified_user</span>
+        </div>
+        <h4 class="font-headline font-bold text-lg uppercase mb-3">No Contract</h4>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Month-to-month. Cancel anytime. We earn your business every single month by delivering results — not locking you in.</p>
+      </div>
+      <div class="reveal delay-300 bg-[#111319] border-2 border-[#584237] hover:border-[#F97316] transition-colors p-8 group">
+        <div class="w-12 h-12 bg-[#F97316] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+          <span class="material-symbols-outlined text-[#1a0800]">flash_on</span>
+        </div>
+        <h4 class="font-headline font-bold text-lg uppercase mb-3">48hr Deployment</h4>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Fill out one form. We handle everything. Your AI receptionist is live and answering calls within 48 hours.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     HOT LEAD TRANSFER
+════════════════════════════════════════════════ -->
+<section id="hot-lead" class="py-24 bg-[#111319] border-t-4 border-[#1e1f26] overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Header -->
+    <div class="text-center mb-16 reveal">
+      <span class="text-[#F97316] font-headline text-sm font-bold uppercase tracking-widest block mb-4">PREMIUM FEATURE</span>
+      <h2 class="font-headline text-5xl md:text-6xl font-black uppercase leading-none mb-4">
+        Hot Lead <span class="text-[#F97316]">Transfer</span>
+      </h2>
+      <p class="text-on-surface-variant max-w-2xl mx-auto text-lg">The AI handles the routine calls. But when a big job calls — the kind worth $5,000, $10,000, or more — it puts them straight through to you. Live. Right now.</p>
+    </div>
+
+    <!-- Main layout -->
+    <div class="grid md:grid-cols-2 gap-1 mb-1">
+
+      <!-- Left — how it works visual -->
+      <div class="reveal-left bg-[#0c0e14] border-2 border-[#584237] p-10 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-48 h-48 bg-[#F97316]/5 blur-[60px] pointer-events-none"></div>
+        <div class="font-mono text-[10px] text-[#a78b7d] uppercase tracking-widest mb-8">CALL_FLOW // HOT_LEAD_DETECTED</div>
+
+        <!-- Flow diagram -->
+        <div class="space-y-2">
+
+          <!-- Step A -->
+          <div class="flex items-center gap-4 p-4 bg-[#1e1f26] border-l-4 border-[#a78b7d]">
+            <div class="w-10 h-10 border-2 border-[#a78b7d] flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-[#a78b7d] text-lg">phone_in_talk</span>
+            </div>
+            <div>
+              <div class="font-headline font-bold text-sm uppercase">Caller Rings In</div>
+              <div class="text-on-surface-variant text-xs">AI answers in 0.4 seconds, begins qualifying conversation</div>
+            </div>
+          </div>
+
+          <!-- Arrow -->
+          <div class="flex justify-center py-1">
+            <span class="material-symbols-outlined text-[#584237] text-2xl">arrow_downward</span>
+          </div>
+
+          <!-- Step B -->
+          <div class="flex items-center gap-4 p-4 bg-[#1e1f26] border-l-4 border-[#a78b7d]">
+            <div class="w-10 h-10 border-2 border-[#a78b7d] flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-[#a78b7d] text-lg">psychology</span>
+            </div>
+            <div>
+              <div class="font-headline font-bold text-sm uppercase">AI Detects Hot Signal</div>
+              <div class="text-on-surface-variant text-xs">Commercial job, big scope, multiple locations, high budget mentioned</div>
+            </div>
+          </div>
+
+          <!-- Arrow -->
+          <div class="flex justify-center py-1">
+            <span class="material-symbols-outlined text-[#584237] text-2xl">arrow_downward</span>
+          </div>
+
+          <!-- Step C — highlighted -->
+          <div class="flex items-center gap-4 p-4 bg-[#1e1f26] border-l-4 border-[#F97316]">
+            <div class="w-10 h-10 border-2 border-[#F97316] bg-[#F97316]/10 flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-[#F97316] text-lg">record_voice_over</span>
+            </div>
+            <div>
+              <div class="font-headline font-bold text-sm uppercase text-white">AI Says to Caller:</div>
+              <div class="text-[#F97316] text-sm italic mt-1">"This sounds like something our owner would want to speak with you about directly. Let me get him on the line right now."</div>
+            </div>
+          </div>
+
+          <!-- Arrow -->
+          <div class="flex justify-center py-1">
+            <span class="material-symbols-outlined text-[#584237] text-2xl">arrow_downward</span>
+          </div>
+
+          <!-- Step D -->
+          <div class="flex items-center gap-4 p-4 bg-[#F97316]/10 border-l-4 border-[#F97316] border-2 border-[#F97316]/30">
+            <div class="w-10 h-10 bg-[#F97316] flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-[#1a0800] text-lg">smartphone</span>
+            </div>
+            <div>
+              <div class="font-headline font-bold text-sm uppercase text-[#F97316]">Your Cell Rings — Live Transfer</div>
+              <div class="text-on-surface-variant text-xs">Customer is already on the line. You pick up, they're there. No callback needed.</div>
+            </div>
+          </div>
+
+          <!-- Arrow -->
+          <div class="flex justify-center py-1">
+            <span class="material-symbols-outlined text-[#584237] text-2xl">arrow_downward</span>
+          </div>
+
+          <!-- Fallback -->
+          <div class="flex items-center gap-4 p-4 bg-[#1e1f26] border-l-4 border-[#3B82F6]">
+            <div class="w-10 h-10 border-2 border-[#3B82F6] flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-[#3B82F6] text-lg">voicemail</span>
+            </div>
+            <div>
+              <div class="font-headline font-bold text-sm uppercase">If You Don't Answer</div>
+              <div class="text-on-surface-variant text-xs">AI takes their info and tells them you'll call back within the hour. No lead lost.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Right — what qualifies + pro tip -->
+      <div class="flex flex-col gap-1">
+
+        <!-- What triggers it -->
+        <div class="reveal-right bg-[#0c0e14] border-2 border-[#584237] p-10 flex-1">
+          <h3 class="font-headline text-xl font-black uppercase mb-6 flex items-center gap-3">
+            <span class="w-6 h-6 bg-[#F97316] flex items-center justify-center">
+              <span class="material-symbols-outlined text-[#1a0800] text-sm">bolt</span>
+            </span>
+            What Triggers a Transfer
+          </h3>
+          <p class="text-on-surface-variant text-sm mb-6">You define what "hot" means for your business. Common triggers we program in:</p>
+          <div class="space-y-3">
+            <div class="flex items-start gap-3 text-sm">
+              <span class="w-2 h-2 bg-[#F97316] mt-1.5 shrink-0"></span>
+              <span>Caller mentions a <strong class="text-white">commercial property</strong> or job site</span>
+            </div>
+            <div class="flex items-start gap-3 text-sm">
+              <span class="w-2 h-2 bg-[#F97316] mt-1.5 shrink-0"></span>
+              <span>They say <strong class="text-white">"multiple units"</strong> or <strong class="text-white">"several locations"</strong></span>
+            </div>
+            <div class="flex items-start gap-3 text-sm">
+              <span class="w-2 h-2 bg-[#F97316] mt-1.5 shrink-0"></span>
+              <span>High-value job type: <strong class="text-white">full panel replacement, water main, new construction</strong></span>
+            </div>
+            <div class="flex items-start gap-3 text-sm">
+              <span class="w-2 h-2 bg-[#F97316] mt-1.5 shrink-0"></span>
+              <span>Caller mentions a <strong class="text-white">budget or scope</strong> above your threshold</span>
+            </div>
+            <div class="flex items-start gap-3 text-sm">
+              <span class="w-2 h-2 bg-[#F97316] mt-1.5 shrink-0"></span>
+              <span>Words like <strong class="text-white">"renovation," "property manager," "HOA"</strong></span>
+            </div>
+            <div class="flex items-start gap-3 text-sm">
+              <span class="w-2 h-2 bg-[#F97316] mt-1.5 shrink-0"></span>
+              <span>Any <strong class="text-white">custom trigger</strong> you define — fully tailored to your trade</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pro tip -->
+        <div class="reveal-right delay-200 bg-[#F97316]/10 border-2 border-[#F97316]/40 p-8">
+          <div class="flex items-start gap-4">
+            <span class="material-symbols-outlined text-[#F97316] text-3xl shrink-0">tips_and_updates</span>
+            <div>
+              <div class="font-headline font-bold text-sm uppercase text-[#F97316] mb-2">Pro Tip From Our Clients</div>
+              <p class="text-on-surface-variant text-sm leading-relaxed">
+                Many of our clients set up a <strong class="text-white">dedicated second number just for hot lead transfers</strong> — so when that specific number rings, they instantly know it's a big job coming through the AI. No caller ID confusion. Pure context before they say hello.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom stat bar -->
+    <div class="reveal grid grid-cols-3 border-2 border-[#584237] mt-1">
+      <div class="p-8 border-r border-[#584237] text-center">
+        <div class="font-headline font-black text-4xl text-[#F97316] mb-2">&lt; 3s</div>
+        <div class="text-xs uppercase tracking-widest text-on-surface-variant font-bold">Transfer Speed</div>
+      </div>
+      <div class="p-8 border-r border-[#584237] text-center">
+        <div class="font-headline font-black text-4xl text-[#F97316] mb-2">100%</div>
+        <div class="text-xs uppercase tracking-widest text-on-surface-variant font-bold">Warm Handoff — No Cold Drops</div>
+      </div>
+      <div class="p-8 text-center">
+        <div class="font-headline font-black text-4xl text-white mb-2">$0</div>
+        <div class="text-xs uppercase tracking-widest text-on-surface-variant font-bold">Extra Cost on Pro &amp; Enterprise</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     PRICING
+════════════════════════════════════════════════ -->
+<section id="pricing" class="py-24 bg-[#111319] border-t-4 border-[#1e1f26]">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16 reveal">
+      <span class="text-[#F97316] font-headline text-sm font-bold uppercase tracking-widest block mb-4">DEPLOYMENT TIERS</span>
+      <h2 class="font-headline text-5xl md:text-6xl font-black uppercase mb-4">Choose Your Plan</h2>
+      <p class="text-on-surface-variant max-w-xl mx-auto">All plans include a 14-day free trial. No credit card required to start.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-1 max-w-5xl mx-auto">
+
+      <!-- Starter -->
+      <div class="reveal bg-[#0c0e14] border-2 border-[#584237] p-10 flex flex-col">
+        <div class="text-xs font-bold uppercase tracking-widest text-[#a78b7d] mb-6">STARTER</div>
+        <div class="font-headline font-black text-5xl mb-1">$197<span class="text-lg font-normal text-on-surface-variant">/mo</span></div>
+        <div class="text-[#a78b7d] text-xs uppercase tracking-widest mb-8">After free trial</div>
+        <ul class="space-y-4 mb-10 flex-grow">
+          <li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-[#F97316] text-lg">check_circle</span> 24/7 AI Receptionist</li>
+          <li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-[#F97316] text-lg">check_circle</span> Appointment Booking</li>
+          <li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-[#F97316] text-lg">check_circle</span> Daily SMS Report</li>
+          <li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-[#F97316] text-lg">check_circle</span> Up to 300 min/mo</li>
+          <li class="flex items-center gap-3 text-sm text-[#a78b7d]"><span class="material-symbols-outlined text-[#584237] text-lg">remove_circle</span> Hot Lead Transfer</li>
+          <li class="flex items-center gap-3 text-sm text-[#a78b7d]"><span class="material-symbols-outlined text-[#584237] text-lg">remove_circle</span> Weekly Email Report</li>
+        </ul>
+        <a href="#schedule" class="w-full border-2 border-[#F97316] text-[#F97316] py-4 font-headline font-black uppercase tracking-widest text-center hover:bg-[#F97316] hover:text-[#1a0800] transition-all block">
+          START FREE TRIAL
+        </a>
+      </div>
+
+      <!-- Pro — RECOMMENDED -->
+      <div class="reveal delay-200 p-1 bg-[#F97316] relative">
+        <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#F97316] text-[#1a0800] px-4 py-1 font-headline font-black text-xs uppercase tracking-widest whitespace-nowrap">
+          MOST POPULAR
+        </div>
+        <div class="bg-[#0c0e14] p-10 flex flex-col h-full">
+          <div class="text-xs font-bold uppercase tracking-widest text-[#F97316] mb-6">PRO</div>
+          <div class="font-headline font-black text-5xl mb-1">$297<span class="text-lg font-normal text-on-surface-variant">/mo</span></div>
+          <div class="text-[#a78b7d] text-xs uppercase tracking-widest mb-8">After free trial</div>
+          <ul class="space-y-4 mb-10 flex-grow">
+            <li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-[#F97316] text-lg">check_circle</span> Everything in Starter</li>
+            <li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-[#F97316] text-lg">check_circle</span> Up to 600 min/mo</li>
+            <li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-[#F97316] text-lg">check_circle</span> Hot Lead Call Transfer</li>
+            <li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-[#F97316] text-lg">check_circle</span> Weekly Email Report</li>
+            <li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-[#F97316] text-lg">check_circle</span> SMS Follow-up Sequences</li>
+            <li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-[#F97316] text-lg">check_circle</span> Priority Setup (24hr)</li>
+          </ul>
+          <a href="#schedule" class="w-full bg-[#F97316] text-[#1a0800] py-4 font-headline font-black uppercase tracking-widest text-center hover:brightness-110 transition-all block">
+            START FREE TRIAL
+          </a>
+        </div>
+      </div>
+
+      <!-- Enterprise -->
+      <div class="reveal delay-400 bg-[#0c0e14] border-2 border-[#584237] p-10 flex flex-col">
+        <div class="text-xs font-bold uppercase tracking-widest text-[#a78b7d] mb-6">ENTERPRISE</div>
+        <div class="font-headline font-black text-5xl mb-1">$497<span class="text-lg font-normal text-on-surface-variant">/mo</span></div>
+        <div class="text-[#a78b7d] text-xs uppercase tracking-widest mb-8">After free trial</div>
+        <ul class="space-y-4 mb-10 flex-grow">
+          <li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-[#F97316] text-lg">check_circle</span> Everything in Pro</li>
+          <li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-[#F97316] text-lg">check_circle</span> Unlimited Minutes</li>
+          <li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-[#F97316] text-lg">check_circle</span> Multi-Location Support</li>
+          <li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-[#F97316] text-lg">check_circle</span> Custom AI Persona</li>
+          <li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-[#F97316] text-lg">check_circle</span> Dedicated Success Manager</li>
+          <li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-[#F97316] text-lg">check_circle</span> Same-Day Deployment</li>
+        </ul>
+        <a href="#schedule" class="w-full border-2 border-[#F97316] text-[#F97316] py-4 font-headline font-black uppercase tracking-widest text-center hover:bg-[#F97316] hover:text-[#1a0800] transition-all block">
+          START FREE TRIAL
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     SCHEDULE / FREE TRIAL
+════════════════════════════════════════════════ -->
+<section id="schedule" class="py-24 bg-[#0c0e14] border-t-4 border-[#1e1f26]">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 gap-16 items-start">
+      <!-- Left — info -->
+      <div class="reveal-left">
+        <span class="text-[#F97316] font-headline text-sm font-bold uppercase tracking-widest block mb-4">BEGIN INSTALLATION</span>
+        <h2 class="font-headline text-5xl font-black uppercase leading-none mb-8">
+          Start Your<br/><span class="text-[#F97316]">14-Day</span><br/>Free Trial
+        </h2>
+        <p class="text-on-surface-variant text-lg leading-relaxed mb-10">
+          Schedule your installation call. We'll collect your business details, configure your AI, and have it answering calls within 48 hours — all at no cost for the first 14 days.
+        </p>
+        <div class="space-y-6">
+          <div class="flex items-start gap-4 p-5 bg-[#1e1f26] border-l-4 border-[#F97316]">
+            <span class="material-symbols-outlined text-[#F97316]">schedule</span>
+            <div>
+              <div class="font-bold uppercase tracking-tight mb-1">Installation Call: 30 Minutes</div>
+              <p class="text-on-surface-variant text-sm">We walk through your business, set up your AI, and test it live with you on the call.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4 p-5 bg-[#1e1f26] border-l-4 border-[#F97316]">
+            <span class="material-symbols-outlined text-[#F97316]">credit_card_off</span>
+            <div>
+              <div class="font-bold uppercase tracking-tight mb-1">No Credit Card Required</div>
+              <p class="text-on-surface-variant text-sm">14 days completely free. Cancel before the trial ends and you owe absolutely nothing.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4 p-5 bg-[#1e1f26] border-l-4 border-[#F97316]">
+            <span class="material-symbols-outlined text-[#F97316]">bolt</span>
+            <div>
+              <div class="font-bold uppercase tracking-tight mb-1">Live Within 48 Hours</div>
+              <p class="text-on-surface-variant text-sm">Your AI receptionist goes live and starts answering real calls — typically within one business day.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right — booking form -->
+      <div class="reveal-right bg-[#111319] border-2 border-[#584237] p-10">
+        <div class="text-[#F97316] font-mono text-xs uppercase tracking-widest mb-6">DEPLOYMENT_FORM // STEP 1 OF 2</div>
+        <form id="schedule-form" onsubmit="submitSchedule(event)" class="space-y-5">
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs uppercase font-bold tracking-wider text-on-surface-variant mb-2">First Name *</label>
+              <input type="text" required placeholder="Mike" class="form-input"/>
+            </div>
+            <div>
+              <label class="block text-xs uppercase font-bold tracking-wider text-on-surface-variant mb-2">Last Name *</label>
+              <input type="text" required placeholder="Johnson" class="form-input"/>
+            </div>
+          </div>
+          <div>
+            <label class="block text-xs uppercase font-bold tracking-wider text-on-surface-variant mb-2">Business Name *</label>
+            <input type="text" required placeholder="Mike's Plumbing LLC" class="form-input"/>
+          </div>
+          <div>
+            <label class="block text-xs uppercase font-bold tracking-wider text-on-surface-variant mb-2">Your Trade *</label>
+            <select required class="form-input">
+              <option value="" disabled selected>Select your trade...</option>
+              <option>Plumbing</option>
+              <option>Electrical</option>
+              <option>HVAC</option>
+              <option>Roofing</option>
+              <option>Landscaping</option>
+              <option>General Contracting</option>
+              <option>Painting</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs uppercase font-bold tracking-wider text-on-surface-variant mb-2">Phone *</label>
+              <input type="tel" required placeholder="(813) 555-0100" class="form-input"/>
+            </div>
+            <div>
+              <label class="block text-xs uppercase font-bold tracking-wider text-on-surface-variant mb-2">Email *</label>
+              <input type="email" required placeholder="mike@mikes-plumbing.com" class="form-input"/>
+            </div>
+          </div>
+          <div>
+            <label class="block text-xs uppercase font-bold tracking-wider text-on-surface-variant mb-2">Approx. Calls Per Week</label>
+            <select class="form-input">
+              <option>1–10 calls/week</option>
+              <option>10–30 calls/week</option>
+              <option>30–60 calls/week</option>
+              <option>60+ calls/week</option>
+            </select>
+          </div>
+          <button type="submit" class="w-full bg-[#F97316] text-[#1a0800] py-5 font-headline font-black text-lg uppercase tracking-widest hover:brightness-110 transition-all active:scale-95 hard-shadow mt-4">
+            Schedule My Free Installation →
+          </button>
+          <p class="text-xs text-on-surface-variant text-center uppercase tracking-widest">No credit card · Cancel anytime · Live in 48hrs</p>
+        </form>
+        <!-- Success message (hidden by default) -->
+        <div id="schedule-success" class="hidden text-center py-12">
+          <div class="text-5xl mb-4">✅</div>
+          <div class="font-headline font-black text-2xl uppercase mb-4 text-[#22C55E]">You're In The Queue</div>
+          <p class="text-on-surface-variant">We'll call you within 2 business hours to schedule your installation. Keep an eye on your phone!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     ONBOARDING FORM (BOT SETUP)
+════════════════════════════════════════════════ -->
+<section id="onboarding" class="py-24 bg-[#111319] border-t-4 border-[#1e1f26]">
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="text-center mb-12 reveal">
+      <span class="text-[#F97316] font-headline text-sm font-bold uppercase tracking-widest block mb-4">DEPLOYMENT_FORM // STEP 2 OF 2</span>
+      <h2 class="font-headline text-4xl md:text-5xl font-black uppercase mb-4">Configure Your AI</h2>
+      <p class="text-on-surface-variant max-w-xl mx-auto">This is how we program your AI to sound exactly like your business. Takes about 5 minutes.</p>
+    </div>
+
+    <div class="bg-[#0c0e14] border-2 border-[#584237] p-10 reveal">
+      <div class="font-mono text-xs text-[#a78b7d] uppercase tracking-widest mb-8">AI_CONFIG // BUSINESS_PROFILE_SETUP</div>
+      <form id="onboarding-form" onsubmit="submitOnboarding(event)" class="space-y-8">
+
+        <!-- Business basics -->
+        <div class="border-b border-[#1e1f26] pb-8">
+          <div class="font-headline font-bold uppercase tracking-wider text-[#F97316] text-sm mb-6 flex items-center gap-3">
+            <span class="w-6 h-6 bg-[#F97316] text-[#1a0800] flex items-center justify-center text-xs font-black">1</span>
+            Business Basics
+          </div>
+          <div class="grid md:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-xs uppercase font-bold tracking-wider text-on-surface-variant mb-2">Business Name (as AI will say it) *</label>
+              <input type="text" required placeholder="Mike's Plumbing" class="form-input"/>
+            </div>
+            <div>
+              <label class="block text-xs uppercase font-bold tracking-wider text-on-surface-variant mb-2">Phone to Forward Calls From</label>
+              <input type="tel" placeholder="(813) 555-0100" class="form-input"/>
+            </div>
+            <div class="md:col-span-2">
+              <label class="block text-xs uppercase font-bold tracking-wider text-on-surface-variant mb-2">Service Area (cities, zip codes, county) *</label>
+              <input type="text" required placeholder="Tampa, Brandon, Riverview — Hillsborough County" class="form-input"/>
+            </div>
+            <div>
+              <label class="block text-xs uppercase font-bold tracking-wider text-on-surface-variant mb-2">Business Hours</label>
+              <input type="text" placeholder="Mon–Fri 7am–6pm, Sat 8am–2pm" class="form-input"/>
+            </div>
+            <div>
+              <label class="block text-xs uppercase font-bold tracking-wider text-on-surface-variant mb-2">Emergency / After-Hours Service?</label>
+              <select class="form-input">
+                <option>Yes — we take emergency calls 24/7</option>
+                <option>Yes — emergencies only, add-on fee</option>
+                <option>No — refer to hours only</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Services -->
+        <div class="border-b border-[#1e1f26] pb-8">
+          <div class="font-headline font-bold uppercase tracking-wider text-[#F97316] text-sm mb-6 flex items-center gap-3">
+            <span class="w-6 h-6 bg-[#F97316] text-[#1a0800] flex items-center justify-center text-xs font-black">2</span>
+            Your Services
+          </div>
+          <div class="space-y-5">
+            <div>
+              <label class="block text-xs uppercase font-bold tracking-wider text-on-surface-variant mb-2">List Your Main Services *</label>
+              <textarea required rows="4" placeholder="Water heater repair/replacement&#10;Drain cleaning&#10;Pipe repair&#10;Toilet install&#10;Leak detection" class="form-input resize-none"></textarea>
+            </div>
+            <div class="grid md:grid-cols-2 gap-5">
+              <div>
+                <label class="block text-xs uppercase font-bold tracking-wider text-on-surface-variant mb-2">Do You Share Pricing on Calls?</label>
+                <select class="form-input">
+                  <option>No — we quote after inspection</option>
+                  <option>Yes — share ballpark ranges</option>
+                  <option>Yes — fixed service pricing</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs uppercase font-bold tracking-wider text-on-surface-variant mb-2">Service Call / Dispatch Fee</label>
+                <input type="text" placeholder="$89 service call fee" class="form-input"/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scheduling -->
+        <div class="border-b border-[#1e1f26] pb-8">
+          <div class="font-headline font-bold uppercase tracking-wider text-[#F97316] text-sm mb-6 flex items-center gap-3">
+            <span class="w-6 h-6 bg-[#F97316] text-[#1a0800] flex items-center justify-center text-xs font-black">3</span>
+            Scheduling &amp; Calendar
+          </div>
+          <div class="grid md:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-xs uppercase font-bold tracking-wider text-on-surface-variant mb-2">Calendar / Booking Link (Cal.com, etc.)</label>
+              <input type="url" placeholder="https://cal.com/your-name" class="form-input"/>
+            </div>
+            <div>
+              <label class="block text-xs uppercase font-bold tracking-wider text-on-surface-variant mb-2">Appointment Types to Offer</label>
+              <input type="text" placeholder="Emergency, Estimate, Scheduled Repair" class="form-input"/>
+            </div>
+            <div>
+              <label class="block text-xs uppercase font-bold tracking-wider text-on-surface-variant mb-2">Your Cell (for Hot Lead Transfers)</label>
+              <input type="tel" placeholder="(813) 555-0199" class="form-input"/>
+            </div>
+            <div>
+              <label class="block text-xs uppercase font-bold tracking-wider text-on-surface-variant mb-2">What Makes a "Hot Lead"?</label>
+              <input type="text" placeholder="Big commercial job, multiple properties, mentions $5k+" class="form-input"/>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQs -->
+        <div class="border-b border-[#1e1f26] pb-8">
+          <div class="font-headline font-bold uppercase tracking-wider text-[#F97316] text-sm mb-6 flex items-center gap-3">
+            <span class="w-6 h-6 bg-[#F97316] text-[#1a0800] flex items-center justify-center text-xs font-black">4</span>
+            Common Customer Questions
+          </div>
+          <div>
+            <label class="block text-xs uppercase font-bold tracking-wider text-on-surface-variant mb-2">What do customers usually ask? (We'll program your AI to answer these) *</label>
+            <textarea required rows="5" placeholder="Do you work weekends? → Yes, Saturdays 8am-2pm&#10;How soon can you come out? → Same day or next day in most cases&#10;Are you licensed? → Yes, licensed and insured in Florida&#10;Do you give free estimates? → Free estimates on replacement jobs, service call fee applies for repairs" class="form-input resize-none"></textarea>
+          </div>
+        </div>
+
+        <!-- Reports -->
+        <div>
+          <div class="font-headline font-bold uppercase tracking-wider text-[#F97316] text-sm mb-6 flex items-center gap-3">
+            <span class="w-6 h-6 bg-[#F97316] text-[#1a0800] flex items-center justify-center text-xs font-black">5</span>
+            Your Daily &amp; Weekly Reports
+          </div>
+          <div class="grid md:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-xs uppercase font-bold tracking-wider text-on-surface-variant mb-2">Phone for Daily Text Reports *</label>
+              <input type="tel" required placeholder="(813) 555-0199" class="form-input"/>
+            </div>
+            <div>
+              <label class="block text-xs uppercase font-bold tracking-wider text-on-surface-variant mb-2">Email for Weekly Summary *</label>
+              <input type="email" required placeholder="mike@mikes-plumbing.com" class="form-input"/>
+            </div>
+            <div>
+              <label class="block text-xs uppercase font-bold tracking-wider text-on-surface-variant mb-2">What time for daily text?</label>
+              <select class="form-input">
+                <option>6:00 PM</option>
+                <option>7:00 PM</option>
+                <option>8:00 PM</option>
+                <option>9:00 PM</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs uppercase font-bold tracking-wider text-on-surface-variant mb-2">Weekly email day</label>
+              <select class="form-input">
+                <option>Monday morning</option>
+                <option>Friday evening</option>
+                <option>Sunday evening</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="w-full bg-[#F97316] text-[#1a0800] py-5 font-headline font-black text-lg uppercase tracking-widest hover:brightness-110 transition-all active:scale-95 hard-shadow">
+          Submit Configuration — Go Live in 48 Hours →
+        </button>
+        <p class="text-xs text-on-surface-variant text-center uppercase tracking-widest">Your AI will be live and answering real calls within 48 hours</p>
+      </form>
+      <div id="onboarding-success" class="hidden text-center py-16">
+        <div class="font-headline font-black text-2xl uppercase mb-4 text-[#22C55E]">🚀 Configuration Received</div>
+        <p class="text-on-surface-variant mb-4">We're building your AI right now. Expect a test call from us within 48 hours so you can hear it in action before it goes live.</p>
+        <div class="font-mono text-xs text-[#a78b7d] uppercase tracking-widest">DEPLOYMENT_STATUS: IN PROGRESS</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     FINAL CTA
+════════════════════════════════════════════════ -->
+<section class="py-32 industrial-grid relative overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-b from-transparent via-[#F97316]/3 to-transparent pointer-events-none"></div>
+  <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+    <h2 class="reveal font-headline text-5xl md:text-7xl font-black uppercase mb-6 leading-[0.9]">
+      Stop Losing Jobs<br/>to <span class="text-[#F97316]">Voicemail</span>
+    </h2>
+    <p class="reveal delay-100 text-on-surface-variant text-xl mb-12 max-w-2xl mx-auto">
+      Every week you wait, more calls go unanswered. More customers go to your competitor. The fix takes 48 hours and costs nothing to try.
+    </p>
+    <div class="reveal delay-200 flex flex-col md:flex-row gap-6 justify-center items-center">
+      <a href="#schedule" class="pulse-btn relative bg-[#F97316] text-[#1a0800] font-headline font-black text-2xl px-12 py-6 border-4 border-[#F97316] hover:bg-transparent hover:text-[#F97316] transition-all uppercase tracking-tighter hard-shadow">
+        Begin Installation — Free
+      </a>
+      <div class="text-on-surface-variant font-label uppercase text-sm font-bold tracking-widest max-w-[200px] text-left border-l-2 border-[#584237] pl-4">
+        Live in <span class="text-white">less than 48 hours</span> from sign-off.
+      </div>
+    </div>
+  </div>
+  <div class="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#F97316]/50 to-transparent"></div>
+</section>
+
+</main>
+
+<!-- ═══════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════ -->
+<footer class="bg-[#0c0e14] border-t-4 border-[#1e1f26] w-full px-8 py-12">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+    <div>
+      <div class="text-lg font-black text-white font-headline uppercase tracking-tight">INDUSTRIAL INTELLIGENCE</div>
+      <div class="text-xs uppercase tracking-widest text-slate-500 font-body mt-1">AI Receptionist for the Trades</div>
+    </div>
+    <div class="flex flex-wrap justify-center gap-8 text-xs uppercase tracking-widest font-body text-slate-500">
+      <a href="#how-it-works" class="hover:text-[#F97316] transition-colors">How It Works</a>
+      <a href="#demo" class="hover:text-[#F97316] transition-colors">Live Demo</a>
+      <a href="#pricing" class="hover:text-[#F97316] transition-colors">Pricing</a>
+      <a href="#schedule" class="hover:text-[#F97316] transition-colors">Free Trial</a>
+      <a href="#" class="hover:text-[#F97316] transition-colors">Privacy Policy</a>
+      <a href="#" class="hover:text-[#F97316] transition-colors">Terms</a>
+    </div>
+    <div class="text-xs uppercase tracking-widest font-body text-slate-500 text-right">
+      © 2026 INDUSTRIAL INTELLIGENCE<br/>
+      <span class="text-[#F97316]">SYSTEM STATUS: OPERATIONAL ●</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════════════
+     JAVASCRIPT
+════════════════════════════════════════════════ -->
+<script>
+// ── Mobile menu ──────────────────────────────
+function toggleMenu() {
+  const m = document.getElementById('mobile-menu');
+  m.classList.toggle('open');
+}
+
+// ── Scroll reveal ────────────────────────────
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => observer.observe(el));
+
+// ── Counter animation ────────────────────────
+function animateCounter(el, target, duration = 2000) {
+  const isCompact = el.dataset.format === 'compact';
+  let start = null;
+  const step = (timestamp) => {
+    if (!start) start = timestamp;
+    const progress = Math.min((timestamp - start) / duration, 1);
+    // Ease out
+    const eased = 1 - Math.pow(1 - progress, 3);
+    const current = Math.floor(eased * target);
+    if (isCompact) {
+      el.textContent = (current / 1000000).toFixed(1) + 'M';
+    } else {
+      el.textContent = current.toLocaleString();
+    }
+    if (progress < 1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+}
+
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      const counters = e.target.querySelectorAll('.counter');
+      counters.forEach(c => animateCounter(c, parseInt(c.dataset.target)));
+      counterObserver.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.3 });
+
+document.querySelectorAll('.counter-block').forEach(b => counterObserver.observe(b.parentElement.parentElement));
+
+// ── ROI Calculator ───────────────────────────
+function updateROI() {
+  const missed   = parseInt(document.getElementById('missed-calls').value);
+  const jobVal   = parseInt(document.getElementById('job-value').value);
+  const rate     = parseInt(document.getElementById('booking-rate').value) / 100;
+  const cost     = 247;
+
+  document.getElementById('missed-val').textContent = missed;
+  document.getElementById('job-val').textContent    = jobVal.toLocaleString();
+  document.getElementById('rate-val').textContent   = Math.round(rate * 100);
+
+  const weeklyRecovery  = missed * jobVal * rate;
+  const monthlyRecovery = Math.round(weeklyRecovery * 4.33);
+  const netGain         = monthlyRecovery - cost;
+  const annualGain      = netGain * 12;
+
+  document.getElementById('monthly-recovery').textContent = monthlyRecovery.toLocaleString();
+  document.getElementById('net-gain').textContent         = netGain.toLocaleString();
+  document.getElementById('annual-gain').textContent      = annualGain.toLocaleString();
+}
+
+// ── Demo button ──────────────────────────────
+function activateDemo() {
+  const btn      = document.getElementById('demo-btn');
+  const waveform = document.getElementById('waveform');
+
+  // Animate waveform to full brightness
+  waveform.style.opacity = '1';
+  waveform.style.transition = 'opacity .4s';
+
+  btn.innerHTML = `<span class="material-symbols-outlined text-2xl animate-pulse">graphic_eq</span> Connecting to AI Receptionist...`;
+  btn.disabled  = true;
+
+  // After 2s simulate "connected"
+  setTimeout(() => {
+    btn.innerHTML = `<span class="material-symbols-outlined text-2xl">phone_in_talk</span> Connected — Speak Now`;
+    btn.classList.add('bg-[#22C55E]');
+    btn.classList.remove('bg-[#F97316]');
+
+    // In production: initialize Retell web widget here
+    // Example:
+    // const client = new RetellWebClient();
+    // client.startCall({ agentId: "YOUR_AGENT_ID" });
+  }, 2000);
+}
+
+// ── Nav active on scroll ─────────────────────
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-link');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => {
+    if (window.scrollY >= s.offsetTop - 120) current = s.id;
+  });
+  navLinks.forEach(l => {
+    l.classList.remove('active');
+    if (l.getAttribute('href') === '#' + current) l.classList.add('active');
+  });
+
+  // Nav shadow on scroll
+  const nav = document.getElementById('navbar');
+  if (window.scrollY > 20) {
+    nav.style.boxShadow = '0 4px 30px rgba(0,0,0,.5)';
+  } else {
+    nav.style.boxShadow = 'none';
+  }
+});
+
+// ── Forms ────────────────────────────────────
+function submitSchedule(e) {
+  e.preventDefault();
+  document.getElementById('schedule-form').classList.add('hidden');
+  document.getElementById('schedule-success').classList.remove('hidden');
+}
+
+function submitOnboarding(e) {
+  e.preventDefault();
+  document.getElementById('onboarding-form').classList.add('hidden');
+  document.getElementById('onboarding-success').classList.remove('hidden');
+}
+
+// Init ROI on load
+updateROI();
+</script>
+
 </body>
 </html>
